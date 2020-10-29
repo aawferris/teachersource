@@ -12,7 +12,7 @@ For Full Project Details, visit here: https://docs.google.com/document/d/1B9OqAI
 
 ## Component Hierarchy
 
-Click here to see:
+Click here to see: https://app.diagrams.net/#G1GoCKGnU_vyN61UQC7LXt4A6cVs4tCsNa
 
 ## API and Data Sample
 
