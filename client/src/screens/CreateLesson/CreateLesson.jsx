@@ -38,7 +38,7 @@ const CreateLesson = (props) => {
         <input
           className="input-title"
           placeholder='Title'
-          value={post.title}
+          value={lesson.title}
           name='title'
           required
           autoFocus
@@ -47,7 +47,7 @@ const CreateLesson = (props) => {
         <input
           className="input-subject"
           placeholder='Subject'
-          value={post.subject}
+          value={lesson.subject}
           name='subject'
           required
           onChange={handleChange}
@@ -55,7 +55,7 @@ const CreateLesson = (props) => {
         <input
           className="input-grade-level"
           placeholder='Grade Level'
-          value={post.gradeLevel}
+          value={lesson.gradeLevel}
           name='gradeLevel'
           required
           onChange={handleChange}
@@ -64,7 +64,7 @@ const CreateLesson = (props) => {
           className="textarea-content"
           rows={10}
           placeholder='Lesson Description'
-          value={post.description}
+          value={lesson.description}
           name='description'
           required
           onChange={handleChange}
