@@ -36,7 +36,7 @@ const LessonEdit = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     let { id } = props.match.params
-    const updated = await updateLesson(id, post)
+    const updated = await updateLesson(id, lesson)
     setUpdated(updated)
   }
 
@@ -47,20 +47,6 @@ const LessonEdit = (props) => {
   return (
     <Layout>
       <div className="lesson-edit">
-        {/* <div className="image-container">
-          <img className="edit-post-image" src={post.imgURL} alt={post.title} />
-          <form onSubmit={handleSubmit}>
-            <input
-              className="edit-input-image-link"
-              type="text"
-              placeholder='Image Link'
-              value={post.imgURL}
-              name='imgURL'
-              required
-              onChange={handleChange}
-            />
-          </form>
-        </div> */}
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="input-title"
@@ -68,6 +54,26 @@ const LessonEdit = (props) => {
             placeholder='Title'
             value={lesson.title}
             name='title'
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+          <input
+            className="input-subject"
+            type="text"
+            placeholder='Subject'
+            value={lesson.subject}
+            name='subject'
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+          <input
+            className="input-grade-level"
+            type="text"
+            placeholder='Grade Level'
+            value={lesson.gradeLevel}
+            name='gradeLevel'
             required
             autoFocus
             onChange={handleChange}
@@ -89,5 +95,4 @@ const LessonEdit = (props) => {
     </Layout>
   )
 }
-
 export default LessonEdit
