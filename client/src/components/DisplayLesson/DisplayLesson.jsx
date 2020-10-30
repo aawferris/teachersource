@@ -29,7 +29,7 @@ class DisplayLesson extends Component {
       );
 
      return(
-      <div className="lesson-cards">
+       <div className="lesson-cards">
         <div className="cards">{CARDS}</div>
       </div>
     );

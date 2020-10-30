@@ -7,7 +7,7 @@ const Nav = () => {
     <header>
       <div className="header">
         <NavLink className="logo" to="/"> {/* Add in logo here later */}
-          <img src="../../../../public/assets/teacher-source-icon.png" />
+          <img src="/assets/teacher-source-icon.png" />
         </NavLink>
         <div className="links"> {/* Add in dropdown here later */}
           <p>Entire Site ^ _____________Search</p>

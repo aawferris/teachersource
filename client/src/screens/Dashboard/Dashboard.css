@@ -1,0 +1,8 @@
+.my-lesson-icons {
+  display: flex;
+}
+
+button {
+  height: 25px;
+  align-self: center;
+}
