@@ -10,7 +10,7 @@ const apiUrls = {
 if (window.location.hostname === "localhost") {
   apiUrl = apiUrls.development;
 } else {
-  apiURL = spiUrls.production;
+  apiUrl = apiUrls.production;
 }
 
 const api = axios.create({
