@@ -10,7 +10,7 @@ const Nav = () => {
           Teacher Source
         </NavLink>
         <div className="links"> {/* Add in dropdown here later */}
-          <NavLink className="link" to="/lessons">
+          <NavLink className="link" to="/dashboard">
             Entire Site
           </NavLink>
           {/* Add in Search bar here later */}
