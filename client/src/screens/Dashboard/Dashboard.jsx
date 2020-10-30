@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import './Dashboard.css'
 import DisplayLesson from '../../components/DisplayLesson/DisplayLesson'
 import Layout from '../../components/shared/Layout/Layout'
 
