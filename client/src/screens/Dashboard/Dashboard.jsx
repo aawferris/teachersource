@@ -7,9 +7,19 @@ import CreateLesson from '../CreateLesson/CreateLesson'
 const Home = (props) => {
   return (
     <Layout>
-      <div className="home">
-        <DisplayLesson />
-        <button><a href="./add-lesson">Create Lesson</a></button>
+      <div className="dashboard-container">
+        <h1>My Dashboard</h1>
+        <div className="my-lessons">
+          <h3>My Lesson Plans</h3>
+          <div className="my-lesson-icons">
+            <DisplayLesson />
+            <button><a href="./add-lesson">Create Lesson</a></button>
+          </div>
+        </div>
+        <div className="saved-lesson-plans">
+          <h3>Saved Lesson Plans</h3>
+          <DisplayLesson />
+        </div>
       </div>
     </Layout>
   )

@@ -8,8 +8,9 @@
 }
 
 .logo {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 0 auto;
+  padding-left: 20%;
 }
 
 .links {
