@@ -1,0 +1,37 @@
+h1 {
+  color: white;
+}
+.top-box {
+  position: relative;
+  display: inline-block;
+}
+
+.top-box .text-and-buttons {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+  width: 60%;
+}
+
+#left-button{
+  background-color: #d58936;
+  width: 11.9444%;
+  height: 1.99387%;
+  left: 37.0833%;
+  top: 25.5624%;
+  border: none;
+  border-radius: 10px;
+}
+
+#right-button {
+  width: 11.9444%;
+  height: 1.99387%;
+  left: 37.0833%;
+  top: 25.5624%;
+  border: none;
+  border-radius: 10px;
+}
