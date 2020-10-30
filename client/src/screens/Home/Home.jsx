@@ -6,7 +6,12 @@ const Home = () => {
   return (
     <Layout>
       <div className="home">
-        <h1>This is Home!</h1>
+        <div className="greeting-and-action-buttons">
+          <h1>Welcome!</h1>
+          <button>Get Started!</button>
+          <button>Log In</button>
+        </div>
+        
       </div>
     </Layout>
   )
