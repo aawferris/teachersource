@@ -7,7 +7,7 @@ class DisplayLesson extends Component {
   constructor() {
     super();
     this.state = {
-      posts: [],
+      lessons: [],
     };
   }
 
@@ -18,7 +18,6 @@ class DisplayLesson extends Component {
 
   render() {
     const CARDS = this.state.lessons
-      .reverse()
       .map((lesson, index) =>
         index < 8 ? (
           <LessonCard
@@ -29,9 +28,8 @@ class DisplayLesson extends Component {
         ) : null
       );
 
-    return (
+     return(
       <div className="lesson-cards">
-        <div className="latest">LATEST</div>
         <div className="cards">{CARDS}</div>
       </div>
     );
