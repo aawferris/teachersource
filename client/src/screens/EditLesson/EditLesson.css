@@ -1,13 +1,14 @@
 .edit-header {
   display: flex;
   margin: 4% auto;
+  align-items: center;
 }
 
 #arrow {
   height: 69px;
   width: auto;
   align-self: center;
-  padding-right: 2%;
+  padding-right: 15%;
 }
 
 .lesson-edit {
@@ -66,7 +67,7 @@ textarea {
   padding-left: 35px;
 }
 
-button {
+.save-button {
   margin-top: 25px;
   background-color: #34a853;
   color: #ffffff;

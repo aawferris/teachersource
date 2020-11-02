@@ -2,7 +2,6 @@ import React from 'react'
 import './Dashboard.css'
 import DisplayLesson from '../../components/DisplayLesson/DisplayLesson'
 import Layout from '../../components/shared/Layout/Layout'
-import CreateLesson from '../CreateLesson/CreateLesson'
 
 const Home = (props) => {
   return (

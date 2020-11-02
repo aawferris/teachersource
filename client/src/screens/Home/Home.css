@@ -1,9 +1,11 @@
-h1 {
-  color: white;
-}
 .top-box {
   position: relative;
   display: inline-block;
+}
+
+#welcome {
+  font-size: 64px;
+  color: white;
 }
 
 .top-box .text-and-buttons {
@@ -17,21 +19,36 @@ h1 {
   width: 60%;
 }
 
-#left-button{
+#left-button {
   background-color: #d58936;
-  width: 11.9444%;
-  height: 1.99387%;
-  left: 37.0833%;
-  top: 25.5624%;
+  width: 172px;
+  height: 39px;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
+  margin-right: 20px;
 }
 
 #right-button {
-  width: 11.9444%;
-  height: 1.99387%;
-  left: 37.0833%;
-  top: 25.5624%;
+  width: 172px;
+  height: 39px;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+
+#home-image {
+  width: 1440px;
+  height: 525px;
+}
+
+.bottom-box {
+  display: flex;
+}
+
+#card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5% 25%;
 }
