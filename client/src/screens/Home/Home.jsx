@@ -7,7 +7,7 @@ const Home = () => {
     <Layout>
       <div className="home">
         <div className="top-box">
-          <img id="home-image" src="/assets/pexels-julia.png" alt="" />
+          <img id="home-image" src="/assets/pexels-julia.png" alt="kid is watching julia on his computer" />
           <div className="text-and-buttons">
             <h1 id="welcome">Welcome!</h1>
             <div id="button-box">
