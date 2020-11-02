@@ -3,7 +3,8 @@
   height: 12.7812%;
   padding: 25px 0;
   background-color: rgba(71, 78, 93, 0.95);
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   bottom: 0px;
+  margin-top: 50px;
 }
