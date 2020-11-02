@@ -35,40 +35,49 @@ const CreateLesson = (props) => {
   return (
     <Layout>
       <form className="create-form" onSubmit={handleSubmit}>
-        <input
-          className="input-title"
-          placeholder='Title'
-          value={lesson.title}
-          name='title'
-          required
-          autoFocus
-          onChange={handleChange}
-        />
-        <input
-          className="input-subject"
-          placeholder='Subject'
-          value={lesson.subject}
-          name='subject'
-          required
-          onChange={handleChange}
-        />
-        <input
-          className="input-grade-level"
-          placeholder='Grade Level'
-          value={lesson.gradeLevel}
-          name='gradeLevel'
-          required
-          onChange={handleChange}
-        />
-        <textarea
-          className="textarea-content"
-          rows={10}
-          placeholder='Lesson Description'
-          value={lesson.description}
-          name='description'
-          required
-          onChange={handleChange}
-        />
+        <div id="input-first-row">
+          <input
+            className="input"
+            id="input-title"
+            placeholder='Title'
+            value={lesson.title}
+            name='title'
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+          <input
+            className="input"
+            id="input-subject"
+            placeholder='Subject'
+            value={lesson.subject}
+            name='subject'
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input"
+            id="input-grade-level"
+            placeholder='Grade Level'
+            value={lesson.gradeLevel}
+            name='gradeLevel'
+            required
+            onChange={handleChange}
+          />
+        </div>
+        <div id="input-second-row">
+          <textarea
+            className="input"
+            id="input-content"
+            rows={10}
+            placeholder='Lesson Description'
+            value={lesson.description}
+            name='description'
+            required
+            onChange={handleChange}
+          />
+        </div>
+        <p>all elements required</p>
         <button type='submit' className="submit-button">Submit</button>
       </form>
     </Layout>
