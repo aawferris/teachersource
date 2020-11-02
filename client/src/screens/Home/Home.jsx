@@ -13,6 +13,12 @@ const Home = () => {
             <button id="left-button">Get Started!</button>
             <button id="right-button">Log In</button>
           </div>
+          <div className="card-containers">
+            <h2>Discover Training</h2>
+            <h2>Discover Lesson Plans</h2>
+            <h2>Discover Resources</h2>
+            <h2>Discover Forums</h2>
+          </div>
         </div>
         
       </div>

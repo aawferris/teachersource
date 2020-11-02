@@ -4,7 +4,8 @@ import DisplayLesson from '../../components/DisplayLesson/DisplayLesson'
 import Layout from '../../components/shared/Layout/Layout'
 import CreateLesson from '../CreateLesson/CreateLesson'
 
-const Home = (props) => {
+const Dashboard = (props) => {
+
   return (
     <Layout>
       <div className="dashboard-container">
@@ -25,4 +26,4 @@ const Home = (props) => {
   )
 }
 
-export default Home
+export default Dashboard;
