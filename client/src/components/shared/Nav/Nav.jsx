@@ -11,19 +11,19 @@ const Nav = () => {
             <li>About</li>
             <li>Training</li>
             <NavLink className="link" to="/dashboard"><li>Lesson Plans</li>
-          </NavLink>
+            </NavLink>
             <li>Forums</li>
             <li>Resources</li>
           </ul>
         </div>
         <div className="nav-dropdown">
-          <select onChange={() => window.location.href="http://localhost:3001/add-lesson"}>
+          <select onChange={() => window.location.href = "http://localhost:3001/dashboard"}>
             <option>My Account</option>
             <option >My Dashboard</option>
             <option>Help</option>
             <option>Contact Us</option>
           </select>
-      </div>
+        </div>
       </div>
     </nav>
   );
