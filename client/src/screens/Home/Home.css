@@ -27,8 +27,8 @@
   font-size: 64px;
   line-height: 86px;
   text-align: center;
-  color: #FFFFFF;
-  }
+  color: #ffffff;
+}
 
 #left-button {
   background-color: #d58936;
@@ -53,37 +53,34 @@
 
 .card-box {
   display: flex;
-  max-width: 900px;
+  max-width: 1440px;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px;
-  margin: 0 10%;
+  justify-content: center;
 }
 
 .card {
-width: 388px;
-height: 240px;
-background: #4C5B5C;
-text-align: center;
-margin: 50px auto;
-
+  width: 388px;
+  height: 240px;
+  background: #4c5b5c;
+  text-align: center;
+  margin: 80px 115px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-text {
-/* position: absolute; */
-width: 309.31px;
-height: 137.54px;
-left: 259.34px;
-top: 955.93px;
-font-family: Abril Fatface;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-/* line-height: 49px; */
-display: flex;
-align-items: center;
-justify-content: center;
-/* text-align: center; */
-margin: auto;;
-color: #FFFFFF;
+  width: 309.31px;
+  height: 137.54px;
+  left: 259.34px;
+  top: 955.93px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #ffffff;
 }
