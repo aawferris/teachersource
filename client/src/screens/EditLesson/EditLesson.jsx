@@ -47,8 +47,8 @@ const LessonEdit = (props) => {
   return (
     <Layout>
       <div className="edit-header">
-        <NavLink id="arrow-link" to="/dashboard"> 
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+        <NavLink id="arrow-link" to="/dashboard">
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
         </NavLink>
         <h1 id="edit-lesson-plan">Edit Lesson Plan</h1>
       </div>
@@ -65,7 +65,7 @@ const LessonEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label for="title">Title</label>
+              <label htmlFor="title">Title</label>
             </div>
             <div className="grade-box">
               <input
@@ -77,21 +77,21 @@ const LessonEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label for="gradeLevel">Grade Level</label>
+              <label htmlFor="gradeLevel">Grade Level</label>
             </div>
             <div className="subject-box">
-                <input
-                  className="input-subject"
-                  type="text"
-                  value={lesson.subject}
-                  name='subject'
-                  required
-                  autoFocus
-                  onChange={handleChange}
-                  />
-                <label for="subject">Subject</label>
-              </div>
-            </div> 
+              <input
+                className="input-subject"
+                type="text"
+                value={lesson.subject}
+                name='subject'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <label htmlFor="subject">Subject</label>
+            </div>
+          </div>
           <div className="description-box">
             <textarea
               className="textarea-description"
@@ -103,7 +103,7 @@ const LessonEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <label for="description">Description</label>
+            <label htmlFor="description">Description</label>
           </div>
           <div id="tag-box">
             <input
@@ -111,8 +111,9 @@ const LessonEdit = (props) => {
               type="tag"
               value={lesson.subject}
               name='tag'
-              autoFocus/>
-            <label for="tags">Tags</label>
+              autoFocus
+              onChange={handleChange} />
+            <label htmlFor="tags">Tags</label>
           </div>
           <button type='submit' className="save-button">Save</button>
         </form>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './CreateLesson.css'
 import Layout from '../../components/shared/Layout/Layout'
-import { Redirect } from 'react-router-dom'
+import { Redirect, NavLink } from 'react-router-dom'
 import { createLesson } from '../../services/lessons'
 
 const CreateLesson = (props) => {
@@ -34,52 +34,77 @@ const CreateLesson = (props) => {
   }
   return (
     <Layout>
-      <form className="create-form" onSubmit={handleSubmit}>
-        <div id="input-first-row">
-          <input
-            className="input"
-            id="input-title"
-            placeholder='Title'
-            value={lesson.title}
-            name='title'
-            required
-            autoFocus
-            onChange={handleChange}
-          />
-          <input
-            className="input"
-            id="input-subject"
-            placeholder='Subject'
-            value={lesson.subject}
-            name='subject'
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input"
-            id="input-grade-level"
-            placeholder='Grade Level'
-            value={lesson.gradeLevel}
-            name='gradeLevel'
-            required
-            onChange={handleChange}
-          />
-        </div>
-        <div id="input-second-row">
-          <textarea
-            className="input"
-            id="input-content"
-            rows={10}
-            placeholder='Lesson Description'
-            value={lesson.description}
-            name='description'
-            required
-            onChange={handleChange}
-          />
-        </div>
-        <p>all elements required</p>
-        <button type='submit' className="submit-button">Submit</button>
-      </form>
+      <div className="edit-header">
+        <NavLink id="arrow-link" to="/dashboard"> 
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+        </NavLink>
+        <h1 id="edit-lesson-plan">Create Lesson Plan</h1>
+      </div>
+      <div className="lesson-edit">
+        <form className="edit-form" onSubmit={handleSubmit}>
+          <div className="title-gl-subj-box">
+            <div className="title-box">
+              <input
+                className="input-title"
+                type="text"
+                value={lesson.title}
+                name='title'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <label for="title">Title</label>
+            </div>
+            <div className="grade-box">
+              <input
+                className="input-grade-level"
+                type="text"
+                value={lesson.gradeLevel}
+                name='gradeLevel'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <label for="gradeLevel">Grade Level</label>
+            </div>
+            <div className="subject-box">
+                <input
+                  className="input-subject"
+                  type="text"
+                  value={lesson.subject}
+                  name='subject'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                  />
+                <label for="subject">Subject</label>
+              </div>
+            </div> 
+          <div className="description-box">
+            <textarea
+              className="textarea-description"
+              type="textarea"
+              rows={10}
+              cols={78}
+              value={lesson.description}
+              name='description'
+              required
+              onChange={handleChange}
+            />
+            <label for="description">Description</label>
+          </div>
+          <div id="tag-box">
+            <input
+              className="input-tags"
+              type="tag"
+              value={lesson.subject}
+              name='tag'
+              autoFocus/>
+            <label for="tags">Tags</label>
+          </div>
+          <button type='submit' className="save-button">Save</button>
+        </form>
+      </div>
     </Layout>
   )
 }
