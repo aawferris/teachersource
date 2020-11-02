@@ -16,19 +16,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bottom-box">
-          <div id="card-box">
-            <img src="/assets/training-card.png" alt="Discover Training" />
-            <img src="/assets/lesson-card.png" alt="Discover Lesson Plans" />
-            <img src="/assets/resources-card.png" alt="Discover Resources" />
-            <img src="/assets/forums-card.png" alt="Discover Forums" />
-          </div>
-          <div className="card-containers">
-            <h2>Discover Training</h2>
-            <h2>Discover Lesson Plans</h2>
-            <h2>Discover Resources</h2>
-            <h2>Discover Forums</h2>
-          </div>
+        <div className="card-box">
+            <button className="card"><h3 className="card-text">Discover Training</h3></button>
+            <button className="card"><h3 className="card-text">Discover Lesson Plans</h3></button>
+            <button className="card"><h3 className="card-text">Discover Resources</h3></button>
+            <button className="card"><h3 className="card-text">Discover Forums</h3></button>
         </div>
       </div>
     </Layout>

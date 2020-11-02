@@ -1,11 +1,7 @@
 .top-box {
   position: relative;
   display: inline-block;
-}
-
-#welcome {
-  font-size: 64px;
-  color: white;
+  width: 1440px;
 }
 
 .top-box .text-and-buttons {
@@ -18,6 +14,21 @@
   text-align: center;
   width: 60%;
 }
+
+#welcome {
+  /* position: absolute; */
+  width: 875px;
+  height: 93px;
+  left: 561px;
+  top: 374px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 86px;
+  text-align: center;
+  color: #FFFFFF;
+  }
 
 #left-button {
   background-color: #d58936;
@@ -33,8 +44,6 @@
   height: 39px;
   border: none;
   border-radius: 50px;
-  background-color: white;
-  color: black;
 }
 
 #home-image {
@@ -42,13 +51,39 @@
   height: 525px;
 }
 
-.bottom-box {
+.card-box {
   display: flex;
-}
-
-#card-box {
-  display: flex;
+  max-width: 900px;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5% 25%;
+  padding: 50px;
+  margin: 0 10%;
+}
+
+.card {
+width: 388px;
+height: 240px;
+background: #4C5B5C;
+text-align: center;
+margin: 50px auto;
+
+}
+
+.card-text {
+/* position: absolute; */
+width: 309.31px;
+height: 137.54px;
+left: 259.34px;
+top: 955.93px;
+font-family: Abril Fatface;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+/* line-height: 49px; */
+display: flex;
+align-items: center;
+justify-content: center;
+/* text-align: center; */
+margin: auto;;
+color: #FFFFFF;
 }
