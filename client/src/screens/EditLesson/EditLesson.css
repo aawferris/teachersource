@@ -1,0 +1,78 @@
+.edit-header {
+  display: flex;
+  margin: 4% auto;
+}
+
+#arrow {
+  height: 69px;
+  width: auto;
+  align-self: center;
+  padding-right: 2%;
+}
+
+.lesson-edit {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+#edit-lesson-plan {
+  font-size: 64px;
+  color: black;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-gl-subj-box {
+  display: flex;
+}
+
+input {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  width: 284px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+label {
+  padding-left: 25px;
+}
+
+textarea {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 887px;
+  height: 174px;
+}
+
+.title-box,
+.subject-box,
+.grade-box,
+.description-box {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 10px;
+}
+
+#tag-box {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 35px;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #34a853;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 5px;
+  width: 284px;
+  height: 40px;
+  border-radius: 50px;
+}
