@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './EditLesson.css'
-import { useParams, Redirect } from 'react-router-dom'
+import { useParams, Redirect, NavLink } from 'react-router-dom'
 import Layout from '../../components/shared/Layout/Layout'
 import { getLesson, updateLesson } from '../../services/lessons'
 
@@ -47,7 +47,9 @@ const LessonEdit = (props) => {
   return (
     <Layout>
       <div className="edit-header">
-        <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+        <NavLink id="arrow-link" to="/dashboard"> 
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+        </NavLink>
         <h1 id="edit-lesson-plan">Edit Lesson Plan</h1>
       </div>
       <div className="lesson-edit">
