@@ -28,7 +28,7 @@ class DisplayLesson extends Component {
         ) : null
       );
 
-     return(
+    return (
       <div className="lesson-cards">
         <div className="cards">{CARDS}</div>
       </div>
