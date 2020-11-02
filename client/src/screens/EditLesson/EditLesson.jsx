@@ -59,7 +59,6 @@ const LessonEdit = (props) => {
               <input
                 className="input-title"
                 type="text"
-                // placeholder='Title'
                 value={lesson.title}
                 name='title'
                 required
@@ -72,7 +71,6 @@ const LessonEdit = (props) => {
               <input
                 className="input-grade-level"
                 type="text"
-                // placeholder='Grade Level'
                 value={lesson.gradeLevel}
                 name='gradeLevel'
                 required
@@ -85,7 +83,6 @@ const LessonEdit = (props) => {
                 <input
                   className="input-subject"
                   type="text"
-                  // placeholder='Subject'
                   value={lesson.subject}
                   name='subject'
                   required
@@ -101,7 +98,6 @@ const LessonEdit = (props) => {
               type="textarea"
               rows={10}
               cols={78}
-              // placeholder='Desciption'
               value={lesson.description}
               name='description'
               required
