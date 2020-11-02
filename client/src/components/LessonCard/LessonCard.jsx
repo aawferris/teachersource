@@ -1,7 +1,6 @@
 import React from "react";
 import "./LessonCard.css";
 import { Link, NavLink } from "react-router-dom";
-// import img from "./file-icon.png"
 
 const LessonCard = (props) => {
   return (
