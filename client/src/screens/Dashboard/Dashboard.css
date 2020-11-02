@@ -4,7 +4,7 @@ button {
 
 #dashboard-header,
 .lp-subtitle {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface";
 }
 
 #dashboard-header {
@@ -13,6 +13,7 @@ button {
 
 .lp-subtitle {
   font-size: 36px;
+  font-family: "Abril Fatface";
 }
 
 .my-lesson-icons {
