@@ -25,8 +25,8 @@ const Dashboard = (props) => {
         <div className="saved-lesson-plans">
           <h3 className="lp-subtitle">Saved Lesson Plans</h3>
           <div className="saved-lessons-box">
-            <img id="lesson1" src="/assets/saved-lesson1.png"/>
-            <img id="lesson2" src="/assets/saved-lesson2.png" />
+            <img id="lesson1" src="/assets/saved-lesson1.png" alt="mock up lesson thumbnail"/>
+            <img id="lesson2" src="/assets/saved-lesson2.png" alt="mock up lesson thumbnail"/>
           </div>
           <div id="button-div-box">
             <button id="unsave-btn">Unsave</button>
@@ -36,7 +36,7 @@ const Dashboard = (props) => {
         <div className="training-box">
           <h3 className="lp-subtitle">Training and Courses</h3>
           <div id="training-img-box">
-          <img id="training" src="/assets/training1.png"/>
+          <img id="training" src="/assets/training1.png" alt="mock up training thumbnail"/>
           </div>
           <div id="train-btn-box">
             <button id="resume-btn">Resume</button>

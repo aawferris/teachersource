@@ -7,7 +7,7 @@ const Home = () => {
     <Layout>
       <div className="home">
         <div className="top-box">
-          <img id="home-image" src="/assets/pexels-julia.png" alt="" />
+          <img id="home-image" src="/assets/pexels-julia.png" alt="kid is watching julia on his computer" />
           <div className="text-and-buttons">
             <h1 id="welcome">Welcome!</h1>
             <div id="button-box">
@@ -18,10 +18,10 @@ const Home = () => {
         </div>
         <div className="bottom-box">
           <div id="card-box">
-            <img src="/assets/training-card.png" />
-            <img src="/assets/lesson-card.png" />
-            <img src="/assets/resources-card.png" />
-            <img src="/assets/forums-card.png" />
+            <img src="/assets/training-card.png" alt="gray training card box"/>
+            <img src="/assets/lesson-card.png" alt="gray lesson card box"/>
+            <img src="/assets/resources-card.png" alt="gray resource card box"/>
+            <img src="/assets/forums-card.png" alt="gray forum card box"/>
           </div>
           <div className="card-containers">
             <h2>Discover Training</h2>
