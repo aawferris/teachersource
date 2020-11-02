@@ -51,7 +51,7 @@
   height: 525px;
 }
 
-.card-box {
+.cardz-box {
   display: flex;
   max-width: 1440px;
   flex-wrap: wrap;
@@ -59,7 +59,7 @@
   justify-content: center;
 }
 
-.card {
+.cardz {
   width: 388px;
   height: 240px;
   background: #4c5b5c;
