@@ -17,10 +17,10 @@ const Home = () => {
           </div>
         </div>
         <div className="card-box">
-            <button className="card"><h3 className="card-text">Discover Training</h3></button>
-            <button className="card"><h3 className="card-text">Discover Lesson Plans</h3></button>
-            <button className="card"><h3 className="card-text">Discover Resources</h3></button>
-            <button className="card"><h3 className="card-text">Discover Forums</h3></button>
+          <button className="card"><h3 className="card-text">Discover Training</h3></button>
+          <button className="card"><h3 className="card-text">Discover Lesson Plans</h3></button>
+          <button className="card"><h3 className="card-text">Discover Resources</h3></button>
+          <button className="card"><h3 className="card-text">Discover Forums</h3></button>
         </div>
       </div>
     </Layout>
