@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, NavLink } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
-import {getLesson, deleteLesson} from '../../services/lessons'
-import './DetailLesson.css'
+import { getLesson, deleteLesson } from '../../services/lessons';
+import './DetailLesson.css';
 
-function PostDetails(props) {   
+function PostDetails() {
 
-  const [lesson, setLesson] = useState(null)
-  const [isLoaded, setLoaded] = useState(false)
+  const [lesson, setLesson] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
     const fetchLesson = async () => {
-      const lesson = await getLesson(id)
-      setLesson(lesson)
-      setLoaded(true)
+      const lesson = await getLesson(id);
+      setLesson(lesson);
+      setLoaded(true);
     }
-    fetchLesson()
-  }, [id])
+    fetchLesson();
+  }, [id]);
 
   if (!isLoaded) {
     return <h1>Loading...</h1>

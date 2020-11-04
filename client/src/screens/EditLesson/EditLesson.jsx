@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import './EditLesson.css'
-import { useParams, Redirect, NavLink } from 'react-router-dom'
-import Layout from '../../components/shared/Layout/Layout'
-import { getLesson, updateLesson } from '../../services/lessons'
+import React, { useState, useEffect } from 'react';
+import { useParams, Redirect, NavLink } from 'react-router-dom';
+import Layout from '../../components/shared/Layout/Layout';
+import { getLesson, updateLesson } from '../../services/lessons';
+import './EditLesson.css';
 
 const LessonEdit = (props) => {
 
@@ -11,37 +11,37 @@ const LessonEdit = (props) => {
     gradeLevel: '',
     subject: '',
     description: ''
-  })
+  });
 
-  const [isUpdated, setUpdated] = useState(false)
-  let { id } = useParams()
+  const [isUpdated, setUpdated] = useState(false);
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchLesson = async () => {
-      const lesson = await getLesson(id)
-      setLesson(lesson)
+      const lesson = await getLesson(id);
+      setLesson(lesson);
     }
-    fetchLesson()
-  }, [id])
+    fetchLesson();
+  }, [id]);
 
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setLesson({
       ...lesson,
       [name]: value
-    })
+    });
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    let { id } = props.match.params
-    const updated = await updateLesson(id, lesson)
-    setUpdated(updated)
+    event.preventDefault();
+    let { id } = props.match.params;
+    const updated = await updateLesson(id, lesson);
+    setUpdated(updated);
   }
 
   if (isUpdated) {
-    return <Redirect to={`/lessons/${props.match.params.id}`} />
+    return <Redirect to={`/lessons/${props.match.params.id}`} />;
   }
 
   return (
@@ -119,6 +119,6 @@ const LessonEdit = (props) => {
         </form>
       </div>
     </Layout>
-  )
+  );
 }
-export default LessonEdit
+export default LessonEdit;

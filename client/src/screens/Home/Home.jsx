@@ -1,6 +1,6 @@
-import React from 'react'
-import './Home.css'
-import Layout from '../../components/shared/Layout/Layout'
+import React from 'react';
+import Layout from '../../components/shared/Layout/Layout';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
-export default Home
+export default Home;
