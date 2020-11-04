@@ -83,3 +83,7 @@ This is our Schema:
 | Debugging               |    L     |      3hrs      |     --?--     |    --?--    |
 | PostMVP                 |    M     |      3hrs      |     --?--     |    --?--    |
 | Total                   |    H     |     35hrs      |     --?--     |    --?--    |
+
+## Heroku Deployment Links
+
+https://teacher-source.herokuapp.com/ | https://git.heroku.com/teacher-source.git
