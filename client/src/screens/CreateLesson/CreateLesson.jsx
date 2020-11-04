@@ -1,32 +1,32 @@
-import React, { useState } from 'react'
-import './CreateLesson.css'
-import Layout from '../../components/shared/Layout/Layout'
-import { Redirect, NavLink } from 'react-router-dom'
-import { createLesson } from '../../services/lessons'
+import React, { useState } from 'react';
+import Layout from '../../components/shared/Layout/Layout';
+import { Redirect, NavLink } from 'react-router-dom';
+import { createLesson } from '../../services/lessons';
+import './CreateLesson.css';
 
-const CreateLesson = (props) => {
+const CreateLesson = () => {
 
   const [lesson, setLesson] = useState({
     title: '',
     subject: '',
     gradeLevel: '',
     description: ''
-  })
+  });
 
-  const [isCreated, setCreated] = useState(false)
+  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setLesson({
       ...lesson,
       [name]: value
-    })
+    });
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const created = await createLesson(lesson)
-    setCreated({ created })
+    event.preventDefault();
+    const created = await createLesson(lesson);
+    setCreated({ created });
   }
 
   if (isCreated) {
@@ -35,8 +35,8 @@ const CreateLesson = (props) => {
   return (
     <Layout>
       <div className="edit-header">
-        <NavLink id="arrow-link" to="/dashboard"> 
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+        <NavLink id="arrow-link" to="/dashboard">
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
         </NavLink>
         <h1 id="edit-lesson-plan">Create Lesson Plan</h1>
       </div>
@@ -68,18 +68,18 @@ const CreateLesson = (props) => {
               <label for="gradeLevel">Grade Level</label>
             </div>
             <div className="subject-box">
-                <input
-                  className="input-subject"
-                  type="text"
-                  value={lesson.subject}
-                  name='subject'
-                  required
-                  autoFocus
-                  onChange={handleChange}
-                  />
-                <label for="subject">Subject</label>
-              </div>
-            </div> 
+              <input
+                className="input-subject"
+                type="text"
+                value={lesson.subject}
+                name='subject'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <label for="subject">Subject</label>
+            </div>
+          </div>
           <div className="description-box">
             <textarea
               className="textarea-description"
@@ -99,7 +99,7 @@ const CreateLesson = (props) => {
               type="tag"
               value={lesson.subject}
               name='tag'
-              autoFocus/>
+              autoFocus />
             <label for="tags">Tags</label>
           </div>
           <button type='submit' className="save-button">Save</button>
@@ -107,6 +107,6 @@ const CreateLesson = (props) => {
       </div>
     </Layout>
   )
-}
+};
 
-export default CreateLesson
+export default CreateLesson;

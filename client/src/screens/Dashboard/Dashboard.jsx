@@ -1,10 +1,10 @@
-import React from 'react'
-import './Dashboard.css'
+import React from 'react';
 import { NavLink } from "react-router-dom";
-import DisplayLesson from '../../components/DisplayLesson/DisplayLesson'
-import Layout from '../../components/shared/Layout/Layout'
+import DisplayLesson from '../../components/DisplayLesson/DisplayLesson';
+import Layout from '../../components/shared/Layout/Layout';
+import './Dashboard.css';
 
-const Dashboard = (props) => {
+const Dashboard = () => {
 
   return (
     <Layout>
@@ -45,7 +45,7 @@ const Dashboard = (props) => {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default Dashboard;
