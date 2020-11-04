@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./DisplayLesson.css";
 import LessonCard from "../LessonCard/LessonCard";
 import { getLessons } from "../../services/lessons";
+import "./DisplayLesson.css";
 
 class DisplayLesson extends Component {
   constructor() {

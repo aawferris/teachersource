@@ -1,6 +1,6 @@
-import React from 'react'
-import './Home.css'
-import Layout from '../../components/shared/Layout/Layout'
+import React from 'react';
+import Layout from '../../components/shared/Layout/Layout';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -16,15 +16,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="card-box">
-          <button className="card"><h3 className="card-text">Discover Training</h3></button>
-          <button className="card"><h3 className="card-text">Discover Lesson Plans</h3></button>
-          <button className="card"><h3 className="card-text">Discover Resources</h3></button>
-          <button className="card"><h3 className="card-text">Discover Forums</h3></button>
+        <div className="cardz-box">
+          <button className="cardz"><h3 className="card-text">Discover Training</h3></button>
+          <button className="cardz"><h3 className="card-text">Discover Lesson Plans</h3></button>
+          <button className="cardz"><h3 className="card-text">Discover Resources</h3></button>
+          <button className="cardz"><h3 className="card-text">Discover Forums</h3></button>
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
-export default Home
+export default Home;

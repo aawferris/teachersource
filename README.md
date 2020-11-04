@@ -52,11 +52,11 @@ This is our Schema:
 
 | Day     | Deliverable                                 | Status     |
 | ------- | ------------------------------------------- | ---------- |
-| Oct. 29 | Project Plan / Approval                     | Incomplete |
-| Oct. 30 | Backend Skeleton and CRUD (locally)         | Incomplete |
-| Nov. 2  | Finish CRUD, React Skeleton                 | Incomplete |
+| Oct. 29 | Project Plan / Approval                     | Complete   |
+| Oct. 30 | Backend Skeleton and CRUD (locally)         | Complete   |
+| Nov. 2  | Finish CRUD, React Skeleton                 | Complete   |
 | Nov. 3  | ELECTION DAY                                | --VOTE--   |
-| Nov. 4  | React basic screens/component functionality | Incomplete |
+| Nov. 4  | React basic screens/component functionality | Complete   |
 | Nov. 5  | Reach styling and clean up code (Full MVP)  | Incomplete |
 | Nov. 6  | Post MVPs                                   | Incomplete |
 | Nov. 9  | Post MVPs                                   | Incomplete |
@@ -66,18 +66,18 @@ This is our Schema:
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
-| React Skeleton          |    H     |      3hrs      |     --?--     |    --?--    |
-| Component Functionality |    H     |      3hrs      |     --?--     |    --?--    |
-| Component Styling       |    M     |      3hrs      |     --?--     |    --?--    |
-| Screen Functionality    |    H     |      3hrs      |     --?--     |    --?--    |
-| Screen Styling          |    M     |      3hrs      |     --?--     |    --?--    |
-| App.js/Index.js         |    H     |     15min      |     --?--     |    --?--    |
-| Back End Skeleton       |    H     |      3hrs      |     --?--     |    --?--    |
-| GET                     |    M     |     30min      |     --?--     |    --?--    |
-| POST                    |    M     |     30min      |     --?--     |    --?--    |
-| PUT                     |    M     |     30min      |     --?--     |    --?--    |
-| DELETE                  |    M     |     30min      |     --?--     |    --?--    |
-| Deployment (local)      |    H     |      3hrs      |     --?--     |    --?--    |
+| React Skeleton          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Component Functionality |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Component Styling       |    M     |      3hrs      |     3hrs      |    3hrs     |
+| Screen Functionality    |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Screen Styling          |    M     |      3hrs      |     3hrs      |    3hrs     |
+| App.js/Index.js         |    H     |      3hrs      |     15mn      |    15mn     |
+| Back End Skeleton       |    H     |      3hrs      |     3hrs      |    3hrs     |
+| GET                     |    M     |     30min      |     30min     |    30min    |
+| POST                    |    M     |     30min      |     30min     |    30min    |
+| PUT                     |    M     |     30min      |     30min     |    30min    |
+| DELETE                  |    M     |     30min      |     30min     |    30min    |
+| Deployment (local)      |    H     |      3hrs      |     3hrs      |    3hrs     |
 | Delpoyment (Heroku)     |    H     |      3hrs      |     --?--     |    --?--    |
 | Deployment (Netlify)    |    H     |      1hrs      |     --?--     |    --?--    |
 | Debugging               |    L     |      3hrs      |     --?--     |    --?--    |

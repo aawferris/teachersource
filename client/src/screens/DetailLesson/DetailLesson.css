@@ -1,0 +1,58 @@
+.lesson-details {
+  display: flex;
+}
+
+#details-header {
+  display: flex;
+  margin: 4% auto;
+  align-items: center;
+  font-family: Abril Fatface;
+}
+
+#details-h1 {
+  font-size: 64px;
+}
+
+#arrow {
+  height: 69px;
+  width: auto;
+  align-self: center;
+  padding-right: 15%;
+}
+
+span {
+  font-weight: bold;
+}
+
+.details-box {
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+}
+
+.details-box > div {
+  padding: 10px 0;
+}
+
+#title {
+  font-size: 20px;
+}
+
+#subject {
+  font-size: 20px;
+}
+
+#grade {
+  font-size: 20px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+.button-container {
+  margin-bottom: 50px;
+}

@@ -33,7 +33,7 @@ button {
 
 #upload-new-btn {
   background-color: #34a853;
-  color: black;
+  color: #000000;
   border-radius: 10px;
   width: fit-content;
   margin: 7px auto;
@@ -67,14 +67,14 @@ button {
 
 #unsave-btn {
   background-color: #ef3a3a;
-  color: black;
+  color: #000000;
   border-radius: 10px;
   width: fit-content;
 }
 
 #unsave-btn2 {
   background-color: #ef3a3a;
-  color: black;
+  color: #000000;
   border-radius: 10px;
   width: fit-content;
 }
@@ -98,14 +98,14 @@ button {
 
 #resume-btn {
   background-color: #ffad32;
-  color: black;
+  color: #000000;
   border-radius: 10px;
   width: fit-content;
 }
 
 #remove-btn {
   background-color: #ef3a3a;
-  color: black;
+  color: #000000;
   border-radius: 10px;
   width: fit-content;
 }
