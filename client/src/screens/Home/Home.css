@@ -68,7 +68,6 @@
 }
 
 .card-text {
-  /* position: absolute; */
   width: 309.31px;
   height: 137.54px;
   left: 259.34px;
@@ -77,11 +76,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  /* line-height: 49px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
   margin: auto;
   color: #ffffff;
 }
