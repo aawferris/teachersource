@@ -4,11 +4,10 @@
   width: 1440px;
   height: 165px;
   background-color: #790000;
-  color: white;
+  color: #ffffff;
 }
 
 .logo {
-  /* border: 1px solid blue; */
   margin: 0 auto;
   padding-left: 20%;
 }
