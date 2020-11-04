@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  height: 165px;
+  background-color: #790000;
+  color: #ffffff;
+}
+
+.logo {
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+.links {
+  padding-right: 5%;
+  align-self: flex-end;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+}

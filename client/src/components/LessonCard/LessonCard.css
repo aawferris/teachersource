@@ -1,0 +1,20 @@
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-button {
+  background-color: #ffad32;
+  color: #000000;
+  border-radius: 10px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.delete-button {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  width: 60px;
+  margin: 0 auto;
+}

@@ -1,0 +1,85 @@
+.top-box {
+  position: relative;
+  display: inline-block;
+  width: 1440px;
+}
+
+.top-box .text-and-buttons {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+  width: 60%;
+}
+
+#welcome {
+  width: 875px;
+  height: 93px;
+  left: 561px;
+  top: 374px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 86px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#left-button {
+  background-color: #d58936;
+  width: 172px;
+  height: 39px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+#right-button {
+  width: 172px;
+  height: 39px;
+  border: none;
+  border-radius: 50px;
+}
+
+#home-image {
+  width: 1440px;
+  height: 525px;
+}
+
+.cardz-box {
+  display: flex;
+  max-width: 1440px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.cardz {
+  width: 388px;
+  height: 240px;
+  background: #4c5b5c;
+  text-align: center;
+  margin: 80px 115px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  width: 309.31px;
+  height: 137.54px;
+  left: 259.34px;
+  top: 955.93px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #ffffff;
+}

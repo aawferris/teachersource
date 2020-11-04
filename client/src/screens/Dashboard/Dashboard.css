@@ -1,0 +1,111 @@
+button {
+  border: none;
+}
+
+#dashboard-header,
+.lp-subtitle {
+  font-family: "Abril Fatface";
+}
+
+#dashboard-header {
+  font-size: 64px;
+}
+
+.lp-subtitle {
+  font-size: 36px;
+  font-family: "Abril Fatface";
+}
+
+.my-lesson-icons {
+  display: flex;
+}
+
+#lesson-button {
+  height: 228px;
+  width: auto;
+  align-self: center;
+}
+
+.create-new-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#upload-new-btn {
+  background-color: #34a853;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 7px auto;
+}
+
+.saved-lesson-plans {
+  display: flex;
+  flex-direction: column;
+}
+
+#saved-lessons-box {
+  display: flex;
+}
+
+#lesson1 {
+  height: 210px;
+  width: auto;
+}
+
+#lesson2 {
+  height: 210px;
+  width: auto;
+}
+
+#button-div-box {
+  display: flex;
+  width: 250px;
+  padding-left: 70px;
+  justify-content: space-between;
+}
+
+#unsave-btn {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#unsave-btn2 {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.training-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#training {
+  height: 210px;
+  width: auto;
+}
+
+#train-btn-box {
+  display: flex;
+  padding-left: 10px;
+  width: 260px;
+  justify-content: space-around;
+}
+
+#resume-btn {
+  background-color: #ffad32;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#remove-btn {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+}
