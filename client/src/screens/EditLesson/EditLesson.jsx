@@ -14,7 +14,6 @@ const LessonEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
-  const [isDeleted, setDeleted] = useState(false);
   let { id } = useParams();
 
   useEffect(() => {
@@ -43,10 +42,6 @@ const LessonEdit = (props) => {
 
   if (isUpdated) {
     return <Redirect to={`/lessons/${props.match.params.id}`} />;
-  }
-
-  if (isDeleted) {
-    return <Redirect to={`/dashboard`} />;
   }
 
   return (
