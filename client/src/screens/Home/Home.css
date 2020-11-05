@@ -1,7 +1,7 @@
 .top-box {
   position: relative;
   display: inline-block;
-  width: 100vw;
+  width: 1440px;
 }
 
 .top-box .text-and-buttons {
@@ -12,10 +12,14 @@
   right: 0;
   top: 40%;
   text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
 #welcome {
+  width: 875px;
+  height: 93px;
+  left: 561px;
+  top: 374px;
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
@@ -42,24 +46,16 @@
 }
 
 #home-image {
-  width: 100vw;
+  width: 1440px;
   height: 525px;
 }
 
 .cardz-box {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  max-width: 100vw;
-=======
-  max-width: 1300px;
->>>>>>> develop
-=======
-  max-width: 100vw;
->>>>>>> fe057a8c376b101d237ca5d0e702baa81f51cf3b
+  max-width: 1440px;
   flex-wrap: wrap;
+  justify-content: space-around;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .cardz {
