@@ -17,7 +17,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="nav-dropdown">
-          <select onChange={() => window.location.href = "http://localhost:3001/dashboard"}>
+          <select onChange={() => window.location.href = "/dashboard"}>
             <option>My Account</option>
             <option >My Dashboard</option>
             <option>Help</option>

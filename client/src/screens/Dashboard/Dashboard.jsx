@@ -18,7 +18,9 @@ const Dashboard = () => {
               <NavLink to="/add-lesson">
                 <img id="lesson-button" src="/assets/add-lesson-plan.png" alt="plus sign in a box" />
               </NavLink>
-              <button id="upload-new-btn">Upload New</button>
+              <NavLink to="/add-lesson">
+                <button id="upload-new-btn">Upload New</button>
+              </NavLink>
             </div>
           </div>
         </div>
