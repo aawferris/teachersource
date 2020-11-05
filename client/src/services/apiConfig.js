@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
 let apiUrl;
 
 const apiUrls = {
-  production: "https://sei-lessons-api.herokuapp.com/api",
+  production: "https://teacher-source.herokuapp.com/api",
   development: "http://localhost:3000/api",
 };
 

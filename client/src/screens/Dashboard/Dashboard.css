@@ -36,7 +36,7 @@ button {
   color: #000000;
   border-radius: 10px;
   width: fit-content;
-  margin: 7px auto;
+  margin: 6px auto 6px 30%;
 }
 
 .saved-lesson-plans {
