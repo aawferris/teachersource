@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Redirect, NavLink, Link } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
-import { getLesson, updateLesson, deleteLesson } from '../../services/lessons';
+import { getLesson, deleteLesson } from '../../services/lessons';
 import './DeleteLesson.css';
 
 const DeleteLesson = (props) => {
@@ -24,13 +24,13 @@ const DeleteLesson = (props) => {
     fetchLesson();
   }, [id]);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setLesson({
-      ...lesson,
-      [name]: value
-    });
-  }
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setLesson({
+  //     ...lesson,
+  //     [name]: value
+  //   });
+  // }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -51,7 +51,7 @@ const DeleteLesson = (props) => {
             <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="delete-h1">Are you sure you want to delete?</h1>
-          </div>
+        </div>
         <div className='details-box'>
           <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
           <div id='grade'><span>Grade Level: </span>{lesson.gradeLevel}</div>

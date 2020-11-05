@@ -58,7 +58,7 @@ const LessonEdit = (props) => {
         <h1 id="edit-lesson-plan">Edit Lesson Plan</h1>
       </div>
       <div className="lesson-edit">
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="edit-form" onSubmit={handleSubmit} setDelete ={setDeleted}>
           <div className="title-gl-subj-box">
             <div className="title-box">
               <input
