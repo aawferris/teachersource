@@ -53,7 +53,7 @@ const LessonDelete = (props) => {
         <div id="form-box">
           <form id="button-box" onSubmit={handleSubmit}>
             <button ><Link className="edit-button" id="ed-btn" to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
-            <button className="delete-button" id="del-btn" onClick={() => deleteLesson(lesson._id)}>Yes, Delete</button>
+            <button className="delete-button" id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
           </form>
         </div>
       </div>
