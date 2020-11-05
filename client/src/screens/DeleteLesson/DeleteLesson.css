@@ -11,14 +11,12 @@
 }
 
 #form-box {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
 #button-box {
-  border: 1px solid violet;
   display: flex;
   max-width: 50vw;
 }

@@ -12,7 +12,7 @@
   right: 0;
   top: 40%;
   text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
 #welcome {
@@ -78,4 +78,16 @@
   justify-content: center;
   margin: auto;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 54px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 25px;
+  }
 }
