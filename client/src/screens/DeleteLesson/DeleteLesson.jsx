@@ -47,16 +47,16 @@ const DeleteLesson = (props) => {
     <Layout>
       <div id="delete-container">
         <div id="details-header">
-          <NavLink id="arrow-link" to="/dashboard"> 
-            <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
+          <NavLink id="arrow-link" to="/dashboard">
+            <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="details-h1">Are you sure you want to delete?</h1>
-          </div>
+        </div>
         <div className='details-box'>
-            <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
-            <div id='grade'><span>Grade Level: </span>{lesson.gradeLevel}</div>
-            <div id='subject'><span>Subject: </span>{lesson.subject}</div>
-            <div id="description"><span>Description: </span>{lesson.description}</div>
+          <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
+          <div id='grade'><span>Grade Level: </span>{lesson.gradeLevel}</div>
+          <div id='subject'><span>Subject: </span>{lesson.subject}</div>
+          <div id="description"><span>Description: </span>{lesson.description}</div>
         </div>
         <div id="form-box">
           <form id="button-box" onSubmit={handleSubmit}>
@@ -69,4 +69,4 @@ const DeleteLesson = (props) => {
   )
 }
 
-export default LessonDelete
+export default DeleteLesson
