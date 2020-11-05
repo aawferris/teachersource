@@ -51,7 +51,7 @@ const DeleteLesson = (props) => {
             <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="delete-h1">Are you sure you want to delete?</h1>
-          </div>
+        </div>
         <div className='details-box'>
           <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
           <div id='grade'><span>Grade Level: </span>{lesson.gradeLevel}</div>
