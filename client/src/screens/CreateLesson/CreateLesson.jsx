@@ -30,7 +30,7 @@ const CreateLesson = () => {
   }
 
   if (isCreated) {
-    return <Redirect to={`/lessons`} />
+    return <Redirect to={`/dashboard`} />
   }
   return (
     <Layout>
@@ -53,7 +53,7 @@ const CreateLesson = () => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label for="title">Title</label>
+              <label htmlFor="title">Title</label>
             </div>
             <div className="grade-box">
               <input
@@ -65,7 +65,7 @@ const CreateLesson = () => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label for="gradeLevel">Grade Level</label>
+              <label htmlFor="gradeLevel">Grade Level</label>
             </div>
             <div className="subject-box">
               <input
@@ -77,7 +77,7 @@ const CreateLesson = () => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label for="subject">Subject</label>
+              <label htmlFor="subject">Subject</label>
             </div>
           </div>
           <div className="description-box">
@@ -91,7 +91,7 @@ const CreateLesson = () => {
               required
               onChange={handleChange}
             />
-            <label for="description">Description</label>
+            <label htmlFor="description">Description</label>
           </div>
           <div id="tag-box">
             <input
@@ -100,7 +100,7 @@ const CreateLesson = () => {
               value={lesson.subject}
               name='tag'
               autoFocus />
-            <label for="tags">Tags</label>
+            <label htmlFor="tags">Tags</label>
           </div>
           <button type='submit' className="save-button">Save</button>
         </form>

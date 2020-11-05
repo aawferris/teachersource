@@ -1,7 +1,7 @@
 .top-box {
   position: relative;
   display: inline-block;
-  width: 1440px;
+  width: 100vw;
 }
 
 .top-box .text-and-buttons {
@@ -16,10 +16,6 @@
 }
 
 #welcome {
-  width: 875px;
-  height: 93px;
-  left: 561px;
-  top: 374px;
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
@@ -46,16 +42,16 @@
 }
 
 #home-image {
-  width: 1440px;
+  width: 100vw;
   height: 525px;
 }
 
 .cardz-box {
   display: flex;
-  max-width: 1440px;
+  max-width: 1300px;
   flex-wrap: wrap;
-  justify-content: space-around;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .cardz {
@@ -82,4 +78,16 @@
   justify-content: center;
   margin: auto;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 54px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 25px;
+  }
 }
