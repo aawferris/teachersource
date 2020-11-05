@@ -30,7 +30,7 @@ const CreateLesson = () => {
   }
 
   if (isCreated) {
-    return <Redirect to={`/lessons`} />
+    return <Redirect to={`/dashboard`} />
   }
   return (
     <Layout>

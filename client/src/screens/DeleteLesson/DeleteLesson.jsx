@@ -4,7 +4,15 @@ import Layout from '../../components/shared/Layout/Layout';
 import { getLesson, updateLesson, deleteLesson } from '../../services/lessons';
 import './DeleteLesson.css';
 
-const LessonDelete = (props) => {
+const DeleteLesson = (props) => {
+
+  const [lesson, setLesson] = useState({
+    title: '',
+    gradeLevel: '',
+    subject: '',
+    description: ''
+  });
+
 
   const [isUpdated, setUpdated] = useState(false);
   const [isDeleted, setDeleted] = useState(false);
@@ -34,6 +42,10 @@ const LessonDelete = (props) => {
     setUpdated(updated);
   }
 
+  if (isDeleted) {
+    return <Redirect to={`/dashboard`} />;
+  }
+
   if (isUpdated) {
     return <Redirect to={`/lessons/${props.match.params.id}`} />;
   }
@@ -50,3 +62,5 @@ const LessonDelete = (props) => {
   )
 
 }
+
+export default DeleteLesson
