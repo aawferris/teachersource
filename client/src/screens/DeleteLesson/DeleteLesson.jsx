@@ -50,10 +50,10 @@ const LessonDelete = (props) => {
             <div id='subject'><span>Subject: </span>{lesson.subject}</div>
             <div id="description"><span>Description: </span>{lesson.description}</div>
         </div>
-        <div id="form-box">
-          <form id="button-box" onSubmit={handleSubmit}>
-            <button ><Link className="edit-button" id="ed-btn" to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
-            <button className="delete-button" id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
+        <div id="delete-form-box">
+          <form id="delete-button-box" onSubmit={handleSubmit}>
+            <button ><Link id="ed-btn" to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
+            <button id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
           </form>
         </div>
       </div>
