@@ -49,10 +49,14 @@
 .cardz-box {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 100vw;
 =======
   max-width: 1300px;
 >>>>>>> develop
+=======
+  max-width: 100vw;
+>>>>>>> fe057a8c376b101d237ca5d0e702baa81f51cf3b
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
