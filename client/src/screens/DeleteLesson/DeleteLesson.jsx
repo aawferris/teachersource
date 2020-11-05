@@ -42,7 +42,7 @@ const LessonDelete = (props) => {
           <NavLink id="arrow-link" to="/dashboard"> 
             <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
           </NavLink>
-          <h1 id="details-h1">Are you sure you want to delete?</h1>
+          <h1 id="delete-h1">Are you sure you want to delete?</h1>
           </div>
         <div className='details-box'>
             <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
