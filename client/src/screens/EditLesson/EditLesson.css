@@ -66,3 +66,7 @@ textarea {
   align-self: flex-start;
   padding-left: 35px;
 }
+
+.lesson-edit {
+  height: 36vh;
+}
