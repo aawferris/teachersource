@@ -9,9 +9,15 @@ const Nav = () => {
         <NavLink className="logo" to="/"> {/* Add in logo here later */}
           <img id="apple-icon" src="/assets/teacher-source-icon.png" alt="Apple Icon" />
         </NavLink>
-        <div className="links"> {/* Add in dropdown here later */}
-          <p>Entire Site ^ _____________Search</p>
-          {/* Add in Search bar here later */}
+        <div className="links"> 
+          <form>
+            <select id="site-dropdown">
+              <option className="drop-option">Entire Site</option>
+            </select>
+          <label for="search"/>
+            <input id="search-bar" type="search" placeholder="Search" />
+            <img src="/assets/magnifying-glass.png"  alt="magnifying glass icon" />
+          </form>
         </div>
       </div>
     </header>
