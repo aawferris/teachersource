@@ -14,7 +14,7 @@ const Nav = () => {
             <select id="site-dropdown">
               <option className="drop-option">Entire Site</option>
             </select>
-          <label for="search"/>
+          <label htmlFor="search"/>
             <input id="search-bar" type="search" placeholder="Search" />
             <img src="/assets/magnifying-glass.png"  alt="magnifying glass icon" />
           </form>
