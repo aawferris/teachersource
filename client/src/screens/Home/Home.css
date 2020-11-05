@@ -79,3 +79,9 @@
   margin: auto;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 54px;
+  }
+}
