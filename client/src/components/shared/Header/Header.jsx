@@ -16,7 +16,7 @@ const Nav = () => {
             </select>
           <label for="search"/>
             <input id="search-bar" type="search" placeholder="Search" />
-            <img src="/assets/magnifying-glass.png"  alt="magnifying glass icon" />
+            <img id="magnifying-glass" src="/assets/magnifying-glass.png"  alt="magnifying glass icon" />
           </form>
         </div>
       </div>

@@ -85,3 +85,9 @@
     margin: 54px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .cardz {
+    margin: 25px;
+  }
+}
