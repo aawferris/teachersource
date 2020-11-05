@@ -12,10 +12,14 @@
   right: 0;
   top: 40%;
   text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
 #welcome {
+  width: 875px;
+  height: 93px;
+  left: 561px;
+  top: 374px;
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
@@ -48,10 +52,10 @@
 
 .cardz-box {
   display: flex;
-  max-width: 1300px;
+  max-width: 100vw;
   flex-wrap: wrap;
+  justify-content: space-around;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .cardz {
