@@ -36,3 +36,9 @@
   color: #ffffff;
   text-align: right;
 }
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    padding-left: 40%;
+  }
+}
