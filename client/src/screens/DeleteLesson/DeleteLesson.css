@@ -1,0 +1,24 @@
+#ed-btn {
+  padding: 5px;
+  font-weight: bold;
+}
+
+#del-btn {
+  padding: 5px;
+  width: fit-content;
+  font-weight: bold;
+  margin: 15px;
+}
+
+#form-box {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#button-box {
+  border: 1px solid violet;
+  display: flex;
+  max-width: 50vw;
+}
