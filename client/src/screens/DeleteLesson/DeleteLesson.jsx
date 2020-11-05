@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Redirect, Link, NavLink } from 'react-router-dom';
+import { useParams, Redirect, NavLink, Link } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
-import { getLesson, deleteLesson } from '../../services/lessons';
+import { getLesson, updateLesson, deleteLesson } from '../../services/lessons';
 import './DeleteLesson.css';
 
-const LessonDelete = (props) => {
+const DeleteLesson = (props) => {
 
   const [lesson, setLesson] = useState({
     title: '',
@@ -23,6 +23,14 @@ const LessonDelete = (props) => {
     }
     fetchLesson();
   }, [id]);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setLesson({
+      ...lesson,
+      [name]: value
+    });
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
