@@ -5,7 +5,7 @@ const User = new Schema(
   {
     fullname: { type: String, required: true },
     email: { type: String, required: true },
-    // imgURL: { type: Image, required: false },
+    imgURL: { type: String, required: false },
     state: { type: String, required: true },
     district: { type: String, required: true },
     gradeLevel: { type: String, required: true },
