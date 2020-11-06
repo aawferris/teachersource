@@ -6,7 +6,7 @@ import './CreateUser.css';
 
 const CreateLesson = () => {
 
-  const [user, setUser] = useState({
+  const [user, setUser] = useState({ //[userForm, setUserForm]
     fullname: '',
     email: '',
     imgURL: '',
@@ -28,11 +28,11 @@ const CreateLesson = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const created = await createUser(user);
-    setCreated({ created });
+    const user = await createUser(user); // pass in userForm
+    // props.setUser(user)
   }
 
-  if (isCreated) {
+  if (user) { //
     return <Redirect to={`/dashboard`} />
   }
   return (

@@ -9,7 +9,7 @@ const User = new Schema(
     state: { type: String, required: true },
     district: { type: String, required: true },
     gradeLevel: { type: String, required: true },
-    subjects: { type: Array, required: true },
+    subjects: { type: Array, required: true }, // put array braces around the object,,,still defined as a String
     // lessons: [{ type: Schema.Types.ObjectId, ref: "lessons" }],
   },
   { timestamps: true }
