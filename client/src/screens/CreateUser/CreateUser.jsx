@@ -135,7 +135,7 @@ const CreateLesson = () => {
             <input
               className="input-tags"
               type="tag"
-              value={lesson.subject}
+              value={user.subjects}
               name='tag'
               autoFocus />
             <label htmlFor="tags">Tags</label>
