@@ -75,3 +75,8 @@ span {
 .button-container {
   margin-bottom: 50px;
 }
+
+.lesson-detail {
+  height: 100%;
+  min-height: 55vh;
+}
