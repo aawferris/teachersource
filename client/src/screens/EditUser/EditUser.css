@@ -3,22 +3,21 @@
   margin: 4% auto;
   align-items: center;
   font-family: Abril Fatface;
-  padding-left: 3%;
 }
 
 #arrow {
-  height: 69px;
+  height: 30px;
   width: auto;
   align-self: center;
   padding-right: 15%;
 }
 
-.lesson-edit {
+.user-edit {
   display: flex;
   justify-content: center;
 }
 
-#edit-lesson-plan {
+#edit-user {
   font-size: 64px;
   color: #000000;
 }
@@ -45,13 +44,6 @@ label {
   padding-left: 25px;
 }
 
-textarea {
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  width: 887px;
-  height: 174px;
-}
-
 .title-box,
 .subject-box,
 .grade-box,
@@ -66,8 +58,4 @@ textarea {
   flex-direction: column;
   align-self: flex-start;
   padding-left: 35px;
-}
-
-.lesson-edit {
-  height: 36vh;
 }
