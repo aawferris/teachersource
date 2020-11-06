@@ -6,7 +6,7 @@ import CreateLesson from "./screens/CreateLesson/CreateLesson";
 import Dashboard from "./screens/Dashboard/Dashboard";
 import DetailLesson from "./screens/DetailLesson/DetailLesson";
 // import DetailUser from "./screens/DetailUser/DetailUser";
-import DisplayUser from "./screens/DisplayUser/DisplayUser";
+import DetailUser from "./screens/DetailUser/DetailUser";
 import EditLesson from "./screens/EditLesson/EditLesson";
 import EditUser from "./screens/EditUser/EditUser";
 import DeleteLesson from "./screens/DeleteLesson/DeleteLesson";
@@ -27,10 +27,10 @@ const App = (props) => {
         <Route exact path="/lessons/:id/edit" component={EditLesson} />
         <Route exact path="/lessons/:id" component={DetailLesson} />
         <Route exact path="/lessons/:id/delete" component={DeleteLesson} />
-        <Route exact path="/users" component={DisplayUser} />
+        <Route exact path="/users" component={DetailUser} />
         {/* <Route exact path="/add-user" component={CreateUser} /> */}
         <Route exact path="/users/:id/edit" component={EditUser} />
-        {/* <Route exact path="/users/:id" component={DetailUser} /> */}
+        <Route exact path="/users/:id" component={DetailUser} />
         {/* <Route exact path="/users/:id/delete" component={DeleteUser} /> */}
       </Switch>
     </div>
