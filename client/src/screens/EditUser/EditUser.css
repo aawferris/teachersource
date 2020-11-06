@@ -1,0 +1,61 @@
+.edit-header {
+  display: flex;
+  margin: 4% auto;
+  align-items: center;
+  font-family: Abril Fatface;
+}
+
+#arrow {
+  height: 30px;
+  width: auto;
+  align-self: center;
+  padding-right: 15%;
+}
+
+.user-edit {
+  display: flex;
+  justify-content: center;
+}
+
+#edit-user {
+  font-size: 64px;
+  color: #000000;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-gl-subj-box {
+  display: flex;
+}
+
+input {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  width: 284px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+label {
+  padding-left: 25px;
+}
+
+.title-box,
+.subject-box,
+.grade-box,
+.description-box {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 10px;
+}
+
+#tag-box {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 35px;
+}
