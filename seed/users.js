@@ -14,8 +14,8 @@ const main = async () => {
     gradeLevel: "Sophmore",
     subjects: ["Math", "Science"],
   });
-
   await user1.save();
+
   const user2 = new User({
     fullname: "Maury Posa",
     email: "spreadyourwingsandfly@yahoo.com",
@@ -28,10 +28,10 @@ const main = async () => {
   });
   await user2.save();
 
-  user1.lessons = await Lesson.find({ userId: user1 });
-  await user1.save();
-  user2.lessons = await Lesson.find({ userId: user2 });
-  await user2.save();
+  // user1.lessons = await Lesson.find({ userId: user1 });
+  // await user1.save();
+  // user2.lessons = await Lesson.find({ userId: user2 });
+  // await user2.save();
 };
 const run = async () => {
   await main();

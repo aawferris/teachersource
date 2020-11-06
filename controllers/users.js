@@ -3,6 +3,15 @@ const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
+const getUsers = async (req, res) => {
+  try {
+    const users = await Lesson.find();
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 const getUser = async (req, res) => {
   try {
     const users = await User.find();
@@ -51,6 +60,7 @@ const deleteUser = async (req, res) => {
 };
 
 module.exports = {
+  getUsers,
   getUser,
   createUser,
   updateUser,
