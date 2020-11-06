@@ -24,8 +24,7 @@ span {
   font-weight: bold;
 }
 
-.details-box {
-  border: 1px solid #000000;
+#details-box {
   display: flex;
   flex-direction: column;
   width: 60vw;

@@ -28,16 +28,16 @@ function LessonDetails() {
       <div className="lesson-detail">
         <div id="details-header">
           <NavLink id="arrow-link" to="/dashboard">
-            <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
+            <img id="arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow that says go back" />
           </NavLink>
-          <h1 id="details-h1">Lesson Plan Details</h1>
         </div>
         <div className="info-box">
           <div className='details-box'>
-            <div id='title'><span>Lesson Title: </span>{lesson.title}</div>
-            <div id='grade'><span>Grade Level: </span>{lesson.gradeLevel}</div>
-            <div id='subject'><span>Subject: </span>{lesson.subject}</div>
+            <div id='title'>[{lesson.title}]</div>
+            <div id='subject'><span>Subject: </span>[{lesson.subject}]</div>
+            <div id='grade'><span>Grade Level: </span>[{lesson.gradeLevel}]</div>
             <div id="description"><span>Description: </span>{lesson.description}</div>
+            <div id="tags"><span>Tags: </span>{lesson.subject}</div>
           </div>
           <div className="button-container">
             <button className="edit-button"><Link className="edit-link" to={`/lessons/${lesson._id}/edit`}>Edit</Link></button>
