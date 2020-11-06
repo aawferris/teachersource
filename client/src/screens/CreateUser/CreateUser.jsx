@@ -13,7 +13,7 @@ const CreateLesson = () => {
     state: '',
     district: '',
     gradeLevel: '',
-    subjects: ''
+    subjects: []
   });
 
   const [isCreated, setCreated] = useState(false);
