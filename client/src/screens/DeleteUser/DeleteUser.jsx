@@ -29,7 +29,7 @@ const DeleteUser = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     let { id } = props.match.params;
-    const deleted = await deleteLesson(id, user);
+    const deleted = await deleteUser(id, user);
     setDeleted(deleted);
   }
 
@@ -56,8 +56,8 @@ const DeleteUser = (props) => {
         </div>
         <div id="delete-form-box">
           <form id="delete-button-box" onSubmit={handleSubmit}>
-            <button ><Link id="ed-btn" to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
-            <button id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
+            <button ><Link id="ed-btn" to={`/users/${user._id}/edit`}>No, Don't Delete</Link></button>
+            <button id="del-btn" onClick={() => deleteUser(user._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
           </form>
         </div>
       </div>
@@ -65,4 +65,4 @@ const DeleteUser = (props) => {
   )
 }
 
-export default DeleteLesson
+export default DeleteUser
