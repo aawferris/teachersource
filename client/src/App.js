@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
 import CreateLesson from "./screens/CreateLesson/CreateLesson";
@@ -9,6 +9,10 @@ import DeleteLesson from "./screens/DeleteLesson/DeleteLesson";
 import { Route, Switch } from "react-router-dom";
 
 const App = () => {
+  const [user, setUser] = useState(null);
+  //pass setUSer function down to the Create Accoutn screen (compt.)
+  // in that cmpt. submit will send a create request
+
   return (
     <div className="app">
       <Switch>
