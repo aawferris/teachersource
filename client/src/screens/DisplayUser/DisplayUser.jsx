@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, NavLink } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import { getUser } from '../../services/users';
-import './DetailLesson.css';
+import './DisplayUser.css';
 
 function UserDetails() {
 
