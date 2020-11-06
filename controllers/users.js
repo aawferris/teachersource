@@ -5,7 +5,7 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const getUsers = async (req, res) => {
   try {
-    const users = await Lesson.find();
+    const users = await User.find();
     res.json(users);
   } catch (error) {
     res.status(500).json({ error: error.message });
