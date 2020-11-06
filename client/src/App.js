@@ -5,7 +5,6 @@ import CreateLesson from "./screens/CreateLesson/CreateLesson";
 // import CreateUser from "./screens/CreateUser/CreateUser";
 import Dashboard from "./screens/Dashboard/Dashboard";
 import DetailLesson from "./screens/DetailLesson/DetailLesson";
-// import DetailUser from "./screens/DetailUser/DetailUser";
 import DetailUser from "./screens/DetailUser/DetailUser";
 import EditLesson from "./screens/EditLesson/EditLesson";
 import EditUser from "./screens/EditUser/EditUser";
@@ -15,7 +14,7 @@ import { Route, Switch } from "react-router-dom";
 
 const App = (props) => {
   const [user, setUser] = useState(null);
-  //pass setUSer function down to the Create Accoutn screen (compt.)
+  //pass setUser function down to the Create Accoutn screen (compt.)
   // in that cmpt. submit will send a create request
 
   return (
