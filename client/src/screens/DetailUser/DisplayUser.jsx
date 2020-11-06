@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, NavLink } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import { getUser } from '../../services/users';
-import './DisplayUser.css';
+import './DetailUser.css';
 
-function UserDetails() {
+function DetailUser() {
 
   const [user, setUser] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
@@ -51,4 +51,4 @@ function UserDetails() {
   )
 }
 
-export default UserDetails;
+export default DetailUser;
