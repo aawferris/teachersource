@@ -14,6 +14,7 @@ const LessonEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
+  const [isDeleted, setDeleted] = useState(false);
   let { id } = useParams();
 
   useEffect(() => {
@@ -44,6 +45,10 @@ const LessonEdit = (props) => {
     return <Redirect to={`/lessons/${props.match.params.id}`} />;
   }
 
+  if (isDeleted) {
+    return <Redirect to={`/dashboard`} />;
+  }
+
   return (
     <Layout>
       <div className="edit-header">
@@ -53,7 +58,7 @@ const LessonEdit = (props) => {
         <h1 id="edit-lesson-plan">Edit Lesson Plan</h1>
       </div>
       <div className="lesson-edit">
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="edit-form" onSubmit={handleSubmit} setDelete ={setDeleted}>
           <div className="title-gl-subj-box">
             <div className="title-box">
               <input
