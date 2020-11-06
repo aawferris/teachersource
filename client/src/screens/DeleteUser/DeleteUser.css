@@ -1,0 +1,35 @@
+#ed-btn {
+  background-color: #ffad32;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+#del-btn {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+#delete-form-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#delete-button-box {
+  display: flex;
+  max-width: 50vw;
+}
+
+#delete-h1 {
+  background-color: #d15e5e;
+  text-align: center;
+  border: 3px dashed #180602ef;
+  color: rgb(248, 248, 248);
+}

@@ -4,7 +4,7 @@ import Layout from '../../components/shared/Layout/Layout';
 import { getLesson } from '../../services/lessons';
 import './DetailLesson.css';
 
-function PostDetails() {
+function LessonDetails() {
 
   const [lesson, setLesson] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
@@ -27,10 +27,10 @@ function PostDetails() {
     <Layout>
       <div className="lesson-detail">
         <div id="details-header">
-        <NavLink id="arrow-link" to="/dashboard"> 
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow"/>
-        </NavLink>
-        <h1 id="details-h1">Lesson Plan Details</h1>
+          <NavLink id="arrow-link" to="/dashboard">
+            <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
+          </NavLink>
+          <h1 id="details-h1">Lesson Plan Details</h1>
         </div>
         <div className="info-box">
           <div className='details-box'>
@@ -39,14 +39,14 @@ function PostDetails() {
             <div id='subject'><span>Subject: </span>{lesson.subject}</div>
             <div id="description"><span>Description: </span>{lesson.description}</div>
           </div>
-        <div className="button-container">
+          <div className="button-container">
             <button className="edit-button"><Link className="edit-link" to={`/lessons/${lesson._id}/edit`}>Edit</Link></button>
             <button className="delete-button"><Link className="delete-link" to={`/lessons/${lesson._id}/delete`}>Delete</Link></button>
+          </div>
         </div>
       </div>
-    </div>
     </Layout>
   )
 }
 
-export default PostDetails;
+export default LessonDetails;
