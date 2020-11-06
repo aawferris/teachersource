@@ -13,8 +13,8 @@ import DeleteLesson from "./screens/DeleteLesson/DeleteLesson";
 // import DeleteUser from "./screens/DeleteUser/DeleteUser";
 import { Route, Switch } from "react-router-dom";
 
-const App = () => {
-  // const [user, setUser] = useState(null);
+const App = (props) => {
+  const [user, setUser] = useState(null);
   //pass setUser function down to the Create Accoutn screen (compt.)
   // in that cmpt. submit will send a create request
 
