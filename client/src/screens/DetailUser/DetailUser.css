@@ -1,5 +1,5 @@
-.lesson-detail {
-  padding-left: 3%;
+.lesson-details {
+  display: flex;
 }
 
 #details-header {
