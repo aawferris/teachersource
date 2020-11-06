@@ -24,14 +24,6 @@ const DeleteLesson = (props) => {
     fetchLesson();
   }, [id]);
 
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setLesson({
-  //     ...lesson,
-  //     [name]: value
-  //   });
-  // }
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     let { id } = props.match.params;
@@ -60,7 +52,7 @@ const DeleteLesson = (props) => {
         </div>
         <div id="delete-form-box">
           <form id="delete-button-box" onSubmit={handleSubmit}>
-            <button ><Link id="ed-btn" to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
+            <button id="ed-btn"><Link to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
             <button id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
           </form>
         </div>
