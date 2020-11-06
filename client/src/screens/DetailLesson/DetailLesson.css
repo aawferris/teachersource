@@ -1,20 +1,19 @@
 .lesson-detail {
-  padding-left: 3%;
+  padding-left: 7%;
+  padding-top: 5%;
+  display: flex;
 }
 
-#details-header {
-  display: flex;
-  margin: 4% auto;
-  align-items: center;
-  font-family: Abril Fatface;
+#detail-info-box {
+  padding-left: 7%;
 }
 
 #details-h1 {
   font-size: 64px;
 }
 
-#arrow {
-  height: 69px;
+#delete-arrow {
+  height: 100px;
   width: auto;
   align-self: center;
   padding-right: 15%;
@@ -32,29 +31,47 @@ span {
   padding: 10px;
 }
 
+.lesson-detail {
+  height: 55vh;
+}
+
 .details-box > div {
   padding: 10px 0;
 }
 
 #title {
-  font-size: 20px;
+  font-size: 65px;
+  font-weight: bolder;
+  flex-wrap: wrap;
 }
 
 #subject {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #grade {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#delete-desc-box {
+  margin: 5% 0;
 }
 
 #description {
   font-size: 20px;
+  font-weight: bold;
+}
+
+#delete-tag-box {
+  margin-bottom: 5%;
+}
+
+#tags {
+  font-weight: bold;
 }
 
 .button-container {
   margin-bottom: 50px;
-}
-.lesson-detail {
-  height: 55vh;
 }
