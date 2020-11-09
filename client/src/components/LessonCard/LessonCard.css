@@ -1,13 +1,19 @@
 .button-container {
   display: flex;
-  justify-content: space-around;
 }
 
-.edit-button {
-  background-color: #ffad32;
+.card {
+  max-width: 15vw;
+  width: 175px;
+  margin: 0 5px 0 0;
+}
+
+.edit-button,
+.delete-button {
   color: #000000;
   border-radius: 10px;
-  width: 60px;
+  width: 284px;
+  height: 40px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 16px;
@@ -23,4 +29,49 @@
   font-weight: bold;
   font-size: 16px;
   font-family: "Inter", sans-serif;
+}
+
+#card-edit-button {
+  background-color: #ffad32;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+#card-delete-button {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.lesson-attr {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#paper {
+  width: 35%;
+  height: auto;
+  padding-top: 20px;
+}
+
+#lesson-card {
+  border: 1px #000000 solid;
+  height: 175px;
+  text-align: center;
+}
+
+#lesson-details {
+  margin-top: 5px;
 }

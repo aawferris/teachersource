@@ -115,7 +115,7 @@ const LessonEdit = (props) => {
               onChange={handleChange} />
             <label htmlFor="tags">Tags</label>
           </div>
-          <button type='submit' className="save-button">Save</button>
+          <button type='submit' id="edit-save-button">Save</button>
         </form>
       </div>
     </Layout>
