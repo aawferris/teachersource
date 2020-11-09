@@ -20,6 +20,7 @@ nav {
 
 .nav-dropdown {
   display: flex;
+  font-family: "Abril Fatface";
   align-self: center;
   border: none;
   padding-right: 4%;
@@ -28,8 +29,8 @@ nav {
 .nav-dropdown > select {
   background-color: transparent;
   color: #000000;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   font-weight: 900;
   border: none;
 }
@@ -42,7 +43,7 @@ ul {
 
 ul > li {
   padding: 0 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 900;
 }
@@ -50,7 +51,7 @@ ul > li {
 a {
   text-decoration: none;
   color: #000000;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 900;
 }
