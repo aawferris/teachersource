@@ -12,23 +12,21 @@
 .edit-button,
 .delete-button {
   color: #000000;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 284px;
   height: 40px;
   margin: 0 auto;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Inter", sans-serif;
+}
+
+.edit-button {
+  background-color: #ffad32;
 }
 
 .delete-button {
   background-color: #ef3a3a;
-  color: #000000;
-  border-radius: 10px;
-  width: 65px;
-  font-weight: bold;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
 }
 
 #card-edit-button {
@@ -57,7 +55,7 @@
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 10px;
   margin-bottom: 0;
-  text-align: left; 
+  text-align: left;
 }
 
 a:link,
