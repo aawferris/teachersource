@@ -7,14 +7,42 @@
   background-color: #ffad32;
   color: #000000;
   border-radius: 10px;
-  width: 60px;
+  font-size: 25px;
+  width: 284px;
+  height: 40px;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 
 .delete-button {
   background-color: #ef3a3a;
   color: #000000;
   border-radius: 10px;
-  width: 60px;
+  font-size: 25px;
+  width: 284px;
+  height: 40px;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+#card-edit-button {
+  background-color: #ffad32;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+#card-delete-button {
+  background-color: #ef3a3a;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
