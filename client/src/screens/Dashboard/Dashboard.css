@@ -49,6 +49,7 @@ button {
   width: fit-content;
   height: auto;
   margin: 5px auto;
+  margin-top: 10px;
   font-family: "Inter", sans-serif;
 }
 
