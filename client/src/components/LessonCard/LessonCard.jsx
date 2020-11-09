@@ -15,12 +15,12 @@ const LessonCard = (props) => {
               <p className="lesson-attr">Grade Level: {props.gradeLevel}</p>
             </div>
           </div>
-          <div className="button-container">
-            <NavLink className="edit-link" to={`/lessons/${props._id}/edit`}><button id="card-edit-button">Edit</button></NavLink>
-            <NavLink className="delete-link" to={`/lessons/${props._id}/delete`}><button id="card-delete-button">Delete</button></NavLink>
-          </div>
         </div>
       </Link>
+      <div className="button-container">
+        <NavLink className="edit-link" to={`/lessons/${props._id}/edit`}><button id="card-edit-button">Edit</button></NavLink>
+        <NavLink className="delete-link" to={`/lessons/${props._id}/delete`}><button id="card-delete-button">Delete</button></NavLink>
+      </div>
     </div>
   );
 };
