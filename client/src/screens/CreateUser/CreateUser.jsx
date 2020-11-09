@@ -37,9 +37,9 @@ const CreateUser = () => {
   }
   return (
     <Layout>
-      <div className="user-header">
-        <NavLink id="arrow-link" to="/">
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
+      <div className="edit-header">
+        <NavLink id="arrow-link" to="/users">
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
         </NavLink>
         <h1 id="create-user-account">Create Account</h1>
       </div>
