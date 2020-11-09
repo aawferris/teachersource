@@ -1,8 +1,3 @@
-/* #edit-user-container {
-  max-width: 100vw;
-  width: 100vw;
-} */
-
 .edit-header {
   display: flex;
   margin: 4% auto;
@@ -56,6 +51,11 @@ input {
   height: 40px;
 }
 
+input.checkbox {
+  border-radius: 100%;
+  background-color: #f1f1f1;
+}
+
 .name-box,
 .email-box,
 .state-box,
@@ -67,14 +67,12 @@ input {
 }
 
 #checkboxes-box {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
 
 #checkbox-first-row,
 #checkbox-second-row {
-  border: 2px solid blue;
   display: flex;
   max-width: 80vw;
   width: 80vw;
@@ -91,7 +89,9 @@ input {
 #arts-box,
 #pe-box,
 #other-box {
-  border: 2px solid black;
   display: flex;
   text-align: left;
+  align-items: center;
+  min-width: 10vw;
+  padding: 15px;
 }

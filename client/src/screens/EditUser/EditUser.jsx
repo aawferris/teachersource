@@ -246,7 +246,7 @@ const UserEdit = (props) => {
                   value={user.subjects} // this will have to change
                   name='other'
                   autoFocus
-                  onChange={handleChange}
+                  onChange={handleChange} 
                 />
               </div>
             </div>
@@ -258,3 +258,4 @@ const UserEdit = (props) => {
   );
 }
 export default UserEdit;
+
