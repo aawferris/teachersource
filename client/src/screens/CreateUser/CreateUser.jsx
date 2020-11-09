@@ -71,7 +71,7 @@ const CreateUser = () => {
               />
               <label htmlFor="email">School E-mail Adress</label>
               </div>
-            <div className="imgURL-box">
+            {/* <div className="imgURL-box">
               <input
                 className="input-imgURL"
                 type="text"
@@ -82,7 +82,7 @@ const CreateUser = () => {
                 onChange={handleChange}
               />
                 <label htmlFor="imgURL">Image</label>
-                </div>
+                </div> */}
             </div>
             <div id="state-district-grade-box">
             <div className="state-box">

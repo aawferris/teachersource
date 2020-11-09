@@ -29,6 +29,7 @@ span {
   width: 60vw;
   margin: 0 auto 50px auto;
   padding: 10px;
+  min-height: 45vh;
 }
 
 .lesson-detail {
