@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import Layout from '../../components/shared/Layout/Layout';
 import './Home.css';
 
@@ -41,8 +42,12 @@ const Home = () => {
           <div className="text-and-buttons">
             <h1 id="welcome">Welcome!</h1>
             <div id="button-box">
-              <button id="left-button">Get Started!</button>
-              <button id="right-button">Log In</button>
+              <NavLink id="started-link" to="/add-user">
+                <button id="get-started">Get Started!</button>
+              </NavLink>
+              <NavLink id="login-link" to="/users">
+                <button id="login-button">Log In</button>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import './CreateUser.css';
 
 const CreateLesson = () => {
 
-  const [user, setUser] = useState({
+  const [user, setUser] = useState({ //[userForm, setUserForm]
     fullname: '',
     email: '',
     imgURL: '',
@@ -28,17 +28,17 @@ const CreateLesson = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const created = await createUser(user);
-    setCreated({ created });
+    const user = await createUser(user); // pass in userForm
+    // props.setUser(user)
   }
 
-  if (isCreated) {
-    return <Redirect to={`/dashboard`} />
+  if (user) { //
+    return <Redirect to={`/add-user`} />
   }
   return (
     <Layout>
       <div className="edit-header">
-        <NavLink id="arrow-link" to="/dashboard">
+        <NavLink id="arrow-link" to="/users">
           <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
         </NavLink>
         <h1 id="edit-user-account">Create Account</h1>

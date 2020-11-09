@@ -17,7 +17,7 @@ const UserEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
-  const [isDeleted, setDeleted] = useState(false);
+
   let { id } = useParams();
 
   useEffect(() => {
@@ -48,10 +48,6 @@ const UserEdit = (props) => {
     return <Redirect to={`/users/${props.match.params.id}`} />;
   }
 
-  if (isDeleted) {
-    return <Redirect to={`/`} />; // I'll need the correct filepath once created
-  }
-
   return (
     <Layout>
       <div className="edit-header">
@@ -61,7 +57,7 @@ const UserEdit = (props) => {
         <h1 id="edit-user">Edit Account Information</h1>
       </div>
       <div className="user-edit">
-        <form className="user-edit-form" onSubmit={handleSubmit} setDelete={setDeleted}>
+        <form className="user-edit-form" onSubmit={handleSubmit}>
           <div id="personal-info-box">
             <div className="name-box">
               <input
