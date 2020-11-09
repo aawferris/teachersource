@@ -130,6 +130,7 @@ const UserEdit = (props) => {
                   <input
                     type="checkbox"
                     id="english"
+                    class="checkbox"
                     value={user.subjects}
                     name='subject'
                     autoFocus
@@ -140,7 +141,8 @@ const UserEdit = (props) => {
                   <label htmlFor="reading">Reading </label>
                   <input
                       type="checkbox"
-                      id="reading"
+                    id="reading"
+                    class="checkbox"
                       value={user.subjects}
                       name='reading'
                       autoFocus
@@ -151,7 +153,8 @@ const UserEdit = (props) => {
                   <label htmlFor="writing">Writing </label>
                   <input
                       type="checkbox"
-                      id="writing"
+                    id="writing"
+                    class="checkbox"
                       value={user.subjects}
                       name='writing'
                       autoFocus
@@ -163,6 +166,7 @@ const UserEdit = (props) => {
                   <input
                       type="checkbox"
                       id="music"
+                      class="checkbox"
                       value={user.subjects}
                       name='music'
                       autoFocus
@@ -174,6 +178,7 @@ const UserEdit = (props) => {
                   <input
                       type="checkbox"
                       id="foreign-language"
+                      class="checkbox"
                       value={user.subjects}
                       name='foreign-language'
                       autoFocus
@@ -186,7 +191,8 @@ const UserEdit = (props) => {
                   <label htmlFor="science">Science </label>
                   <input
                       type="checkbox"
-                      id="science"
+                    id="science"
+                    class="checkbox"
                       value={user.subjects}
                       name='science'
                       autoFocus
@@ -194,10 +200,11 @@ const UserEdit = (props) => {
                     />
                 </div>
                 <div id="math-box">
-                  <label htmlFor="math">Math </label>
+                  <label htmlFor="math">Math          </label>
                   <input
                     type="checkbox"
                     id="math"
+                    class="checkbox"
                     value={user.subjects}
                     name='math'
                     autoFocus
@@ -209,6 +216,7 @@ const UserEdit = (props) => {
                   <input
                     type="checkbox"
                     id="social-studies"
+                    class="checkbox"
                     value={user.subjects}
                     name='social-studies'
                     autoFocus
@@ -220,6 +228,7 @@ const UserEdit = (props) => {
                   <input
                     type="checkbox"
                     id="arts"
+                    class="checkbox"
                     value={user.subjects}
                     name='arts'
                     autoFocus
@@ -230,6 +239,7 @@ const UserEdit = (props) => {
                   <label htmlFor="physical-education">Physical Education </label>
                   <input
                     type="checkbox"
+                    class="checkbox"
                     id="physical-education"
                     value={user.subjects}
                     name='physical-education'
@@ -246,7 +256,7 @@ const UserEdit = (props) => {
                   value={user.subjects} // this will have to change
                   name='other'
                   autoFocus
-                  onChange={handleChange}
+                  onChange={handleChange} 
                 />
               </div>
             </div>
