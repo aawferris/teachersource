@@ -39,7 +39,7 @@ const CreateLesson = () => {
     <Layout>
       <div className="edit-header">
         <NavLink id="arrow-link" to="/users">
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
+          <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
         </NavLink>
         <h1 id="edit-user-account">Create Account</h1>
       </div>
