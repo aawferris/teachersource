@@ -33,6 +33,12 @@
   align-items: center;
 }
 
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
 #personal-info-box {
   display: flex;
 }

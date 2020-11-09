@@ -29,7 +29,7 @@ const CreateUser = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const userCreated = await createUser(user);
-    setCreated({userCreated})
+    setCreated({ userCreated })
   }
 
   if (isCreated) {
