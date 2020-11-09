@@ -106,8 +106,8 @@ const UserEdit = (props) => {
                 onChange={handleChange}
               />
               <label htmlFor="district">District </label>
-              </div>
-              <div className="grade-box">
+            </div>
+            <div className="grade-box">
               <input
                 className="input-grade-level"
                 type="text"
@@ -122,16 +122,16 @@ const UserEdit = (props) => {
           </div>
           <div id="checkboxes-box">
             <div className="subject-box">
-                <input
-                  type="checkbox"
-                  id="english"
-                  value={user.subjects}
-                  name='subject'
-                  autoFocus
-                  onChange={handleChange}
-                />
-            <label htmlFor="english">English </label>
-            <input
+              <input
+                type="checkbox"
+                id="english"
+                value={user.subjects}
+                name='subject'
+                autoFocus
+                onChange={handleChange}
+              />
+              <label htmlFor="english">English</label>
+              <input
                 type="checkbox"
                 id="reading"
                 value={user.subjects}
@@ -139,8 +139,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="reading">Reading </label>
-            <input
+              <label htmlFor="reading">Reading</label>
+              <input
                 type="checkbox"
                 id="writing"
                 value={user.subjects}
@@ -148,8 +148,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="writing">Writing </label>
-            <input
+              <label htmlFor="writing">Writing</label>
+              <input
                 type="checkbox"
                 id="music"
                 value={user.subjects}
@@ -157,8 +157,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="music">Music </label>
-            <input
+              <label htmlFor="music">Music</label>
+              <input
                 type="checkbox"
                 id="foreign-language"
                 value={user.subjects}
@@ -166,8 +166,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="foreign-language">Foreign Language </label>
-            <input
+              <label htmlFor="foreign-language">Foreign Language</label>
+              <input
                 type="checkbox"
                 id="science"
                 value={user.subjects}
@@ -175,8 +175,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="science">Science </label>
-            <input
+              <label htmlFor="science">Science</label>
+              <input
                 type="checkbox"
                 id="math"
                 value={user.subjects}
@@ -184,8 +184,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="math">Math </label>
-            <input
+              <label htmlFor="math">Math</label>
+              <input
                 type="checkbox"
                 id="social-studies"
                 value={user.subjects}
@@ -193,8 +193,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="social-studies">Social Studies </label>
-            <input
+              <label htmlFor="social-studies">Social Studies</label>
+              <input
                 type="checkbox"
                 id="arts"
                 value={user.subjects}
@@ -202,8 +202,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="arts">Arts </label>
-            <input
+              <label htmlFor="arts">Arts</label>
+              <input
                 type="checkbox"
                 id="physical-education"
                 value={user.subjects}
@@ -211,8 +211,8 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-            <label htmlFor="physical-education">Physical Education </label>
-            <input
+              <label htmlFor="physical-education">Physical Education</label>
+              <input
                 type="text"
                 id="other"
                 value={user.subjects}
@@ -220,7 +220,7 @@ const UserEdit = (props) => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label htmlFor="other">Other </label>
+              <label htmlFor="other">Other</label>
             </div>
           </div>
           <button type='submit' className="save-button">Save</button>
