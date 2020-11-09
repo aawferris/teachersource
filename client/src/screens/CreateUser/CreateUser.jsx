@@ -28,11 +28,11 @@ const CreateLesson = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const user = await createUser(user); // pass in userForm
-    // props.setUser(user)
+    const userCreate = await createUser(user);
+    setCreated({userCreate})
   }
 
-  if (user) { //
+  if (isCreated) {
     return <Redirect to={`/add-user`} />
   }
   return (
@@ -63,12 +63,12 @@ const CreateLesson = () => {
                 className="input-email"
                 type="text"
                 value={user.email}
-                name='subject'
+                name='email'
                 required
                 autoFocus
                 onChange={handleChange}
               />
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">School E-mail Adress</label>
             </div>
             <div className="imgURL-box">
               <input
@@ -131,7 +131,7 @@ const CreateLesson = () => {
               <label htmlFor="subjects">Subjects</label>
             </div>
           </div>
-          <div id="tag-box">
+          {/* <div id="tag-box">
             <input
               className="input-tags"
               type="tag"
@@ -139,7 +139,7 @@ const CreateLesson = () => {
               name='tag'
               autoFocus />
             <label htmlFor="tags">Tags</label>
-          </div>
+          </div> */}
           <button type='submit' className="save-button">Save</button>
         </form>
       </div>
