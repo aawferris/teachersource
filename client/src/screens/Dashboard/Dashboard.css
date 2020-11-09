@@ -29,7 +29,9 @@ button {
 }
 
 #lesson-button {
-  height: 228px;
+  margin: 0;
+  padding: 0;
+  height: 175px;
   width: auto;
   align-self: center;
 }
