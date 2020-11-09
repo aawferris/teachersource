@@ -68,3 +68,13 @@ textarea {
   align-self: flex-start;
   padding-left: 35px;
 }
+
+#edit-save-button {
+  background-color: #34a853;
+  color: #ffffff;
+  font-size: 25px;
+  width: 284px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 52px;
+}
