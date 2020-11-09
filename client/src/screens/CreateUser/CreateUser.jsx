@@ -40,7 +40,7 @@ const CreateUser = () => {
       <div id="create-user-container">
         <div id="create-header">
           <NavLink id="arrow-link" to="/">
-            <img id="create-arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
+            <img id="create-arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
           </NavLink>
           <h1 id="create-user">Create Account</h1>
         </div>

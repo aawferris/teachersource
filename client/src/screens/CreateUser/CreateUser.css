@@ -9,10 +9,11 @@
 }
 
 #create-arrow {
-  height: 40px;
+  height: 100px;
   width: auto;
-  margin-top: 45%;
-  padding-right: 10%;
+  padding-right: 15%;
+  align-self: center;
+  padding-top: 10px;
 }
 
 #user-create {
