@@ -7,7 +7,14 @@ const LessonCard = (props) => {
     <div className="lesson-card">
       <Link className="card" to={`/lessons/${props._id}`}>
         <div>
-          <img src="/assets/file-icon.png" alt="icon of a a paper file" />
+          <div id="lesson-card">
+            <img id="paper" src="/assets/blank-doc.png" alt="icon of a a paper file" />
+            <div id="lesson-details">
+              <p className="lesson-attr">Title: {props.name}</p>
+              <p className="lesson-attr">Subject: {props.subject}</p>
+              <p className="lesson-attr">Grade Level: {props.gradeLevel}</p>
+            </div>
+          </div>
           <div className="button-container">
             <NavLink className="edit-link" to={`/lessons/${props._id}/edit`}><button className="edit-button">Edit</button></NavLink>
             <NavLink className="delete-link" to={`/lessons/${props._id}/delete`}><button className="delete-button">Delete</button></NavLink>

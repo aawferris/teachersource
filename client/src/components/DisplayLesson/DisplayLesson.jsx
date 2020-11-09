@@ -23,6 +23,8 @@ class DisplayLesson extends Component {
           <LessonCard
             _id={lesson._id}
             name={lesson.title}
+            subject={lesson.subject}
+            gradeLevel={lesson.gradeLevel}
             key={index}
           />
         ) : null
