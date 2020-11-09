@@ -45,7 +45,7 @@ const Home = () => {
               <NavLink id="started-link" to="/add-user">
                 <button id="get-started">Get Started!</button>
               </NavLink>
-              <NavLink id="login-link" to="/users">
+              <NavLink id="login-link" to="/login">
                 <button id="login-button">Log In</button>
               </NavLink>
             </div>
