@@ -28,11 +28,12 @@ const CreateLesson = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const user = await createUser(user); // pass in userForm
+    const userCreate = await createUser(user); // pass in userForm
     // props.setUser(user)
+    setCreated({userCreate})
   }
 
-  if (user) { //
+  if (isCreated) { //
     return <Redirect to={`/add-user`} />
   }
   return (
