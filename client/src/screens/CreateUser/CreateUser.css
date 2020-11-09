@@ -3,6 +3,7 @@
   margin: 4% auto;
   align-items: center;
   font-family: Abril Fatface;
+  padding-left: 3%;
 }
 
 #arrow {
@@ -12,12 +13,13 @@
   padding-right: 15%;
 }
 
-.user-edit {
+.lesson-edit {
   display: flex;
   justify-content: center;
+  min-height: 44vh;
 }
 
-#edit-user-account {
+#edit-lesson-plan {
   font-size: 64px;
   color: #000000;
 }
@@ -65,15 +67,4 @@ textarea {
   flex-direction: column;
   align-self: flex-start;
   padding-left: 35px;
-}
-
-.save-button {
-  margin-top: 25px;
-  background-color: #34a853;
-  color: #ffffff;
-  font-size: 25px;
-  padding: 5px;
-  width: 284px;
-  height: 40px;
-  border-radius: 50px;
 }

@@ -28,8 +28,20 @@
   align-items: center;
 }
 
-.title-gl-subj-box {
+#state-district-grade-box {
   display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#personal-info-box {
+  display: flex;
+}
+
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
 }
 
 input {
@@ -37,25 +49,49 @@ input {
   border-radius: 25px;
   width: 284px;
   height: 40px;
-  padding-left: 15px;
 }
 
-label {
-  padding-left: 25px;
+input.checkbox {
+  border-radius: 100%;
+  background-color: #f1f1f1;
 }
 
-.title-box,
-.subject-box,
-.grade-box,
-.description-box {
+.name-box,
+.email-box,
+.state-box,
+.district-box,
+.grade-box {
   display: flex;
   flex-direction: column;
   margin: 12px 10px;
 }
 
-#tag-box {
+#checkboxes-box {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  padding-left: 35px;
+}
+
+#checkbox-first-row,
+#checkbox-second-row {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#english-box,
+#reading-box,
+#writing-box,
+#music-box,
+#language-box,
+#science-box,
+#math-box,
+#social-box,
+#arts-box,
+#pe-box,
+#other-box {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  min-width: 10vw;
+  padding: 15px;
 }
