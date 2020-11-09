@@ -54,7 +54,7 @@ textarea {
 
 .title-box,
 .subject-box,
-.grade-box,
+/* .grade-box, */
 .description-box {
   display: flex;
   flex-direction: column;
