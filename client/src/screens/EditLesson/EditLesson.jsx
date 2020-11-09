@@ -47,7 +47,7 @@ const LessonEdit = (props) => {
   return (
     <Layout>
       <div className="edit-header">
-        <NavLink id="arrow-link" to="/add-user">
+        <NavLink id="edit-arrow-link" to="/dashboard">
           <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
         </NavLink>
         <h1 id="edit-lesson-plan">Edit Lesson Plan</h1>
