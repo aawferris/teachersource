@@ -1,37 +1,50 @@
-.edit-header {
+#create-user-container {
+  margin-left: 5%;
+  min-height: 62vh;
+}
+
+#create-header {
   display: flex;
-  margin: 4% auto;
-  align-items: center;
   font-family: Abril Fatface;
-  padding-left: 3%;
 }
 
-#arrow {
-  height: 69px;
+#create-arrow {
+  height: 40px;
   width: auto;
-  align-self: center;
-  padding-right: 15%;
+  margin-top: 45%;
+  padding-right: 10%;
 }
 
-.lesson-edit {
+#user-create {
   display: flex;
   justify-content: center;
-  min-height: 44vh;
 }
 
-#edit-lesson-plan {
+#create-user {
   font-size: 64px;
   color: #000000;
 }
 
-.edit-form {
+#user-create-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title-gl-subj-box {
+#create-personal-info-box {
   display: flex;
+}
+
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
 }
 
 input {
@@ -39,32 +52,58 @@ input {
   border-radius: 25px;
   width: 284px;
   height: 40px;
-  padding-left: 15px;
 }
 
-label {
-  padding-left: 25px;
-}
-
-textarea {
+input.checkbox {
+  border-radius: 100%;
   background-color: #f1f1f1;
-  border-radius: 5px;
-  width: 887px;
-  height: 174px;
 }
 
-.title-box,
-.subject-box,
-.grade-box,
-.description-box {
+.name-box,
+.email-box,
+.state-box,
+.district-box,
+.grade-box {
   display: flex;
   flex-direction: column;
   margin: 12px 10px;
 }
 
-#tag-box {
+#checkboxes-box {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  padding-left: 35px;
+}
+
+#checkbox-first-row,
+#checkbox-second-row {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#english-box,
+#reading-box,
+#writing-box,
+#music-box,
+#language-box,
+#science-box,
+#math-box,
+#social-box,
+#arts-box,
+#pe-box {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  min-width: 10vw;
+  padding: 15px;
+}
+
+#other-box {
+  justify-content: space-around;
+  max-width: 400px;
+}
+
+#create-save-button {
+  margin-top: 5%;
+  margin-left: 35%;
 }
