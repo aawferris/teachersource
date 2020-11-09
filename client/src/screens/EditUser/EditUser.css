@@ -1,0 +1,97 @@
+.edit-header {
+  display: flex;
+  margin: 4% auto;
+  align-items: center;
+  font-family: Abril Fatface;
+}
+
+#arrow {
+  height: 30px;
+  width: auto;
+  align-self: center;
+  padding-right: 15%;
+}
+
+.user-edit {
+  display: flex;
+  justify-content: center;
+}
+
+#edit-user {
+  font-size: 64px;
+  color: #000000;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#personal-info-box {
+  display: flex;
+}
+
+#state-district-grade-box {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+input {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  width: 284px;
+  height: 40px;
+}
+
+input.checkbox {
+  border-radius: 100%;
+  background-color: #f1f1f1;
+}
+
+.name-box,
+.email-box,
+.state-box,
+.district-box,
+.grade-box {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 10px;
+}
+
+#checkboxes-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-first-row,
+#checkbox-second-row {
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+#english-box,
+#reading-box,
+#writing-box,
+#music-box,
+#language-box,
+#science-box,
+#math-box,
+#social-box,
+#arts-box,
+#pe-box,
+#other-box {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  min-width: 10vw;
+  padding: 15px;
+}

@@ -1,3 +1,11 @@
+.dashboard-container {
+  padding-left: 3%;
+}
+
+.card {
+  border: none
+}
+
 button {
   border: none;
 }

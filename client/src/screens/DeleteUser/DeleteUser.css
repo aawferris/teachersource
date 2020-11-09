@@ -1,26 +1,19 @@
-#delete-container {
-  padding-left: 3%;
-  min-height: 56vh;
-}
-
 #ed-btn {
   background-color: #ffad32;
   color: #000000;
   border-radius: 10px;
-  width: 150px;
+  width: fit-content;
   margin-right: 15px;
   font-weight: bold;
-  padding: 10px;
 }
 
 #del-btn {
   background-color: #ef3a3a;
   color: #000000;
   border-radius: 10px;
-  width: 150px;
+  width: fit-content;
   margin-left: 15px;
   font-weight: bold;
-  padding: 10px;
 }
 
 #delete-form-box {

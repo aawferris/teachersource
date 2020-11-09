@@ -25,7 +25,7 @@
   color: #ffffff;
 }
 
-#left-button {
+#get-started {
   background-color: #d58936;
   width: 172px;
   height: 39px;
@@ -34,7 +34,7 @@
   margin-right: 20px;
 }
 
-#right-button {
+#login-button {
   width: 172px;
   height: 39px;
   border: none;
@@ -66,7 +66,7 @@
 
 .card-text {
   width: 309.31px;
-  height: 137.54px;
+  height: 227.54px;
   left: 259.34px;
   top: 955.93px;
   font-family: Abril Fatface;
@@ -78,6 +78,12 @@
   justify-content: center;
   margin: auto;
   color: #ffffff;
+}
+
+.carousel-indicators > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 1200px) {
