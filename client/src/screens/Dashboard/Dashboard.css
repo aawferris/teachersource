@@ -76,6 +76,7 @@ button {
   width: 250px;
   padding-left: 70px;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 #unsave-btn {
@@ -83,6 +84,7 @@ button {
   color: #000000;
   border-radius: 10px;
   width: fit-content;
+  font-family: "Inter", sans-serif;
 }
 
 #unsave-btn2 {
@@ -90,6 +92,8 @@ button {
   color: #000000;
   border-radius: 10px;
   width: fit-content;
+  margin-left: 110px;
+  font-family: "Inter", sans-serif;
 }
 
 .training-box {
@@ -107,6 +111,7 @@ button {
   padding-left: 10px;
   width: 260px;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 #resume-btn {
@@ -114,6 +119,7 @@ button {
   color: #000000;
   border-radius: 10px;
   width: fit-content;
+  font-family: "Inter", sans-serif;
 }
 
 #remove-btn {
@@ -121,4 +127,5 @@ button {
   color: #000000;
   border-radius: 10px;
   width: fit-content;
+  font-family: "Inter", sans-serif;
 }
