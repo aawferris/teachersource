@@ -25,7 +25,7 @@
   color: #ffffff;
 }
 
-#left-button {
+#get-started {
   background-color: #d58936;
   width: 172px;
   height: 39px;
@@ -34,7 +34,7 @@
   margin-right: 20px;
 }
 
-#right-button {
+#login-button {
   width: 172px;
   height: 39px;
   border: none;
