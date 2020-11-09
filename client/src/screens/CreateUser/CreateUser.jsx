@@ -33,12 +33,12 @@ const CreateLesson = () => {
   }
 
   if (user) { //
-    return <Redirect to={`/dashboard`} />
+    return <Redirect to={`/add-user`} />
   }
   return (
     <Layout>
       <div className="edit-header">
-        <NavLink id="arrow-link" to="/dashboard">
+        <NavLink id="arrow-link" to="/users">
           <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
         </NavLink>
         <h1 id="edit-user-account">Create Account</h1>
