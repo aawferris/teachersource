@@ -1,4 +1,4 @@
-import React/* , { useState } */ from "react";
+import React /* , { useState } */ from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
 import CreateLesson from "./screens/CreateLesson/CreateLesson";
@@ -10,6 +10,7 @@ import EditLesson from "./screens/EditLesson/EditLesson";
 import EditUser from "./screens/EditUser/EditUser";
 import DeleteLesson from "./screens/DeleteLesson/DeleteLesson";
 import DeleteUser from "./screens/DeleteUser/DeleteUser";
+import Login from "./screens/Login/Login";
 import { Route, Switch } from "react-router-dom";
 
 const App = (/* props */) => {
@@ -26,6 +27,7 @@ const App = (/* props */) => {
         <Route exact path="/lessons/:id/edit" component={EditLesson} />
         <Route exact path="/lessons/:id" component={DetailLesson} />
         <Route exact path="/lessons/:id/delete" component={DeleteLesson} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/users" component={DetailUser} />
         <Route exact path="/add-user" component={CreateUser} />
         <Route exact path="/users/:id/edit" component={EditUser} />
