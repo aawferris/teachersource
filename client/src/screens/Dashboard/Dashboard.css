@@ -3,7 +3,7 @@
 }
 
 .card {
-  border: none
+  border: none;
 }
 
 button {
@@ -45,8 +45,11 @@ button {
   background-color: #34a853;
   color: #000000;
   border-radius: 10px;
+  font-size: 15px;
   width: fit-content;
-  margin: 7px auto;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 
 .saved-lesson-plans {

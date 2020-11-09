@@ -16,8 +16,8 @@ const LessonCard = (props) => {
             </div>
           </div>
           <div className="button-container">
-            <NavLink className="edit-link" to={`/lessons/${props._id}/edit`}><button className="edit-button">Edit</button></NavLink>
-            <NavLink className="delete-link" to={`/lessons/${props._id}/delete`}><button className="delete-button">Delete</button></NavLink>
+            <NavLink className="edit-link" to={`/lessons/${props._id}/edit`}><button id="card-edit-button">Edit</button></NavLink>
+            <NavLink className="delete-link" to={`/lessons/${props._id}/delete`}><button id="card-delete-button">Delete</button></NavLink>
           </div>
         </div>
       </Link>
