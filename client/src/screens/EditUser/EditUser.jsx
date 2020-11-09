@@ -200,7 +200,7 @@ const UserEdit = (props) => {
                     />
                 </div>
                 <div id="math-box">
-                  <label htmlFor="math">Math          </label>
+                  <label htmlFor="math">Math </label>
                   <input
                     type="checkbox"
                     id="math"
@@ -268,3 +268,4 @@ const UserEdit = (props) => {
   );
 }
 export default UserEdit;
+
