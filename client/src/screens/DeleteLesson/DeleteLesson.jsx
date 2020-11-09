@@ -40,7 +40,7 @@ const DeleteLesson = (props) => {
       <div id="delete-container">
         <div id="details-header">
           <NavLink id="arrow-link" to="/dashboard">
-            <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
+            <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="delete-h1">Are you sure you want to delete?</h1>
         </div>
