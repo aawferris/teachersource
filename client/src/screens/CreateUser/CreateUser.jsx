@@ -38,88 +38,76 @@ const CreateUser = () => {
   return (
     <Layout>
       <div id="create-user-container">
-      <div className="create-header">
-        <NavLink id="arrow-link" to="/">
-          <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
-        </NavLink>
-        <h1 id="create-user">Create Account</h1>
-      </div>
-      <div className="user-create">
-        <form className="user-create-form" onSubmit={handleSubmit}>
-          <div className="personal-info-box">
-            <div className="name-box">
-              <input
-                className="input-name"
-                type="text"
-                value={user.fullname}
-                name='fullname'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="fullname">Full Name</label>
-            </div>
-            <div className="email-box">
-              <input
-                className="input-email"
-                type="text"
-                value={user.email}
-                name='email'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="email">School E-mail Adress</label>
+        <div id="create-header">
+          <NavLink id="arrow-link" to="/">
+            <img id="create-arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
+          </NavLink>
+          <h1 id="create-user">Create Account</h1>
+        </div>
+        <div id="user-create">
+          <form className="user-create-form" onSubmit={handleSubmit}>
+            <div id="create-personal-info-box">
+              <div className="name-box">
+                <input
+                  className="input-name"
+                  type="text"
+                  value={user.fullname}
+                  name='fullname'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+                <label htmlFor="fullname">Full Name</label>
               </div>
-            <div className="imgURL-box">
-              <input
-                className="input-imgURL"
-                type="text"
-                value={user.imgURL}
-                name='imgURL'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-                <label htmlFor="imgURL">Image</label>
-                </div>
+              <div className="email-box">
+                <input
+                  className="input-email"
+                  type="text"
+                  value={user.email}
+                  name='email'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+                <label htmlFor="email">School E-mail Adress</label>
+              </div>
             </div>
             <div id="state-district-grade-box">
-            <div className="state-box">
-              <input
-                className="input-state"
-                type="text"
-                value={user.state}
-                name='state'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="state">State</label>
-            </div>
-            <div className="district-box">
-              <input
-                className="input-district"
-                type="text"
-                value={user.district}
-                name='district'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="district">District</label>
-            </div>
-            <div className="grade-box">
-              <input
-                className="input-grade-level"
-                type="text"
-                value={user.gradeLevel}
-                name='gradeLevel'
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="gradeLevel">Grade Level</label>
+              <div className="state-box">
+                <input
+                  className="input-state"
+                  type="text"
+                  value={user.state}
+                  name='state'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+                <label htmlFor="state">State</label>
+              </div>
+              <div className="district-box">
+                <input
+                  className="input-district"
+                  type="text"
+                  value={user.district}
+                  name='district'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+                <label htmlFor="district">District</label>
+              </div>
+              <div className="grade-box">
+                <input
+                  className="input-grade-level"
+                  type="text"
+                  value={user.gradeLevel}
+                  name='gradeLevel'
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+                <label htmlFor="gradeLevel">Grade Level</label>
               </div>
             </div>
             <div id="checkboxes-box">
@@ -249,10 +237,10 @@ const CreateUser = () => {
                 />
               </div>
             </div>
-            <button type='submit' className="save-button">Save</button>
+            <button type='submit' className="save-button" id="create-save-button">Save</button>
           </form>
-        </div>
-      </div>  
+        </div>  
+      </div>
     </Layout>
   )
 };
