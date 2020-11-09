@@ -76,6 +76,8 @@ a:active {
   border: 1px #000000 solid;
   height: 175px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #lesson-details {
