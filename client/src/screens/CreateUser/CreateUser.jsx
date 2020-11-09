@@ -4,7 +4,7 @@ import { Redirect, NavLink } from 'react-router-dom';
 import { createUser } from '../../services/users';
 import './CreateUser.css';
 
-const CreateLesson = () => {
+const CreateUser = () => {
 
   const [user, setUser] = useState({ //[userForm, setUserForm]
     fullname: '',
@@ -28,12 +28,12 @@ const CreateLesson = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const userCreate = await createUser(user);
-    setCreated({userCreate})
+    const userCreated = await createUser(user);
+    setCreated({userCreated})
   }
 
   if (isCreated) {
-    return <Redirect to={`/add-user`} />
+    return <Redirect to={`/dashboard`} />
   }
   return (
     <Layout>
@@ -41,12 +41,12 @@ const CreateLesson = () => {
         <NavLink id="arrow-link" to="/users">
           <img id="arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
         </NavLink>
-        <h1 id="edit-user-account">Create Account</h1>
+        <h1 id="create-user-account">Create Account</h1>
       </div>
-      <div className="user-edit">
-        <form className="edit-form" onSubmit={handleSubmit}>
-          <div className="title-gl-subj-box">
-            <div className="title-box">
+      <div className="user-create">
+        <form className="create-form" onSubmit={handleSubmit}>
+          <div className="fullname-gl-subj-box">
+            <div className="fullname-box">
               <input
                 className="input-fullname"
                 type="text"
@@ -116,7 +116,7 @@ const CreateLesson = () => {
                 autoFocus
                 onChange={handleChange}
               />
-              <label htmlFor="">Grade Level</label>
+              <label htmlFor="gradeLevel">Grade Level</label>
             </div>
             <div className="subjects-box">
               <input
@@ -147,4 +147,4 @@ const CreateLesson = () => {
   )
 };
 
-export default CreateLesson;
+export default CreateUser;
