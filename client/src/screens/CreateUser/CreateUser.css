@@ -26,7 +26,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 44vh;
 }
 
 .title-gl-subj-box {
@@ -54,7 +53,7 @@ textarea {
 
 .title-box,
 .subject-box,
-.grade-box,
+/* .grade-box, */
 .description-box {
   display: flex;
   flex-direction: column;
