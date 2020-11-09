@@ -12,6 +12,10 @@
   padding-right: 15%;
 }
 
+#edit-user-container {
+  min-height: 56vh;
+}
+
 .user-edit {
   display: flex;
   justify-content: center;
