@@ -3,9 +3,7 @@ import { useParams, Redirect, NavLink } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import { getUser, updateUser } from '../../services/users';
 import './EditUser.css';
-
 const UserEdit = (props) => {
-
   const [user, setUser] = useState({
     fullname: '',
     email: '',
@@ -15,11 +13,8 @@ const UserEdit = (props) => {
     gradeLevel: '',
     subjects: [],
   });
-
   const [isUpdated, setUpdated] = useState(false);
-
   let { id } = useParams();
-
   useEffect(() => {
     const fetchUser = async () => {
       const user = await getUser(id);
@@ -27,8 +22,6 @@ const UserEdit = (props) => {
     }
     fetchUser();
   }, [id]);
-
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUser({
@@ -36,18 +29,15 @@ const UserEdit = (props) => {
       [name]: value
     });
   }
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     let { id } = props.match.params;
     const updated = await updateUser(id, user);
     setUpdated(updated);
   }
-
   if (isUpdated) {
     return <Redirect to={`/users/${props.match.params.id}`} />;
   }
-
   return (
     <Layout>
       <div id="edit-user-container">
@@ -122,7 +112,7 @@ const UserEdit = (props) => {
                 />
                 <label htmlFor="gradeLevel">Grade Level</label>
               </div>
-              </div>
+            </div>
             <div id="checkboxes-box">
               <div id="checkbox-first-row">
                 <div id="english-box">
@@ -140,64 +130,64 @@ const UserEdit = (props) => {
                 <div id="reading-box">
                   <label htmlFor="reading">Reading </label>
                   <input
-                      type="checkbox"
+                    type="checkbox"
                     id="reading"
                     class="checkbox"
-                      value={user.subjects}
-                      name='reading'
-                      autoFocus
-                      onChange={handleChange}
-                    />
+                    value={user.subjects}
+                    name='reading'
+                    autoFocus
+                    onChange={handleChange}
+                  />
                 </div>
                 <div id="writing-box">
                   <label htmlFor="writing">Writing </label>
                   <input
-                      type="checkbox"
+                    type="checkbox"
                     id="writing"
                     class="checkbox"
-                      value={user.subjects}
-                      name='writing'
-                      autoFocus
-                      onChange={handleChange}
-                    />
+                    value={user.subjects}
+                    name='writing'
+                    autoFocus
+                    onChange={handleChange}
+                  />
                 </div>
                 <div id="music-box">
                   <label htmlFor="music">Music </label>
                   <input
-                      type="checkbox"
-                      id="music"
-                      class="checkbox"
-                      value={user.subjects}
-                      name='music'
-                      autoFocus
-                      onChange={handleChange}
-                    />
+                    type="checkbox"
+                    id="music"
+                    class="checkbox"
+                    value={user.subjects}
+                    name='music'
+                    autoFocus
+                    onChange={handleChange}
+                  />
                 </div>
                 <div id="language-box">
                   <label htmlFor="foreign-language">Foreign Language </label>
                   <input
-                      type="checkbox"
-                      id="foreign-language"
-                      class="checkbox"
-                      value={user.subjects}
-                      name='foreign-language'
-                      autoFocus
-                      onChange={handleChange}
-                    />
+                    type="checkbox"
+                    id="foreign-language"
+                    class="checkbox"
+                    value={user.subjects}
+                    name='foreign-language'
+                    autoFocus
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div id="checkbox-second-row">
                 <div id="science-box">
                   <label htmlFor="science">Science </label>
                   <input
-                      type="checkbox"
+                    type="checkbox"
                     id="science"
                     class="checkbox"
-                      value={user.subjects}
-                      name='science'
-                      autoFocus
-                      onChange={handleChange}
-                    />
+                    value={user.subjects}
+                    name='science'
+                    autoFocus
+                    onChange={handleChange}
+                  />
                 </div>
                 <div id="math-box">
                   <label htmlFor="math">Math </label>
@@ -263,7 +253,7 @@ const UserEdit = (props) => {
             <button type='submit' className="save-button">Save</button>
           </form>
         </div>
-      </div>  
+      </div>
     </Layout>
   );
 }
