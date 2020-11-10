@@ -36,6 +36,10 @@ nav {
   border: none;
 }
 
+select, option {
+  background: #ffffff;
+}
+
 ul {
   display: flex;
   list-style: none;
