@@ -1,4 +1,5 @@
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown"
 import "./Nav.css";
 
 const Nav = () => {
@@ -14,14 +15,16 @@ const Nav = () => {
             <li>Resources</li>
           </ul>
         </div>
-        <div className="nav-dropdown">
-          <select onChange={() => window.location.href = "https://teacher-source.netlify.app/dashboard"}>
-            <option>My Account</option>
-            <option >My Dashboard</option>
-            <option>Help</option>
-            <option>Contact Us</option>
-          </select>
-        </div>
+        <Dropdown id="nav-dropdown">
+          <Dropdown.Toggle id="nav-toggle">Menu</Dropdown.Toggle>
+
+          <Dropdown.Menu id='nav-menu'>
+            <Dropdown.Item href="/login" className="dropdown-item">My Account</Dropdown.Item>
+            <Dropdown.Item href="/dashboard" className="dropdown-item">My Dashboard</Dropdown.Item>
+            <Dropdown.Item href="/" className="dropdown-item">Help</Dropdown.Item>
+            <Dropdown.Item href="/" className="dropdown-item">Contact Us</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
     </nav>
   );

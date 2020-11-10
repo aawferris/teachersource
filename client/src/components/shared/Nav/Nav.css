@@ -19,21 +19,27 @@ nav {
   padding-left: 4%;
 }
 
-.nav-dropdown {
+#nav-dropdown {
   display: flex;
-  font-family: "Abril Fatface";
+  font-family: "Inter", sans-serif;
   align-self: center;
-  border: none;
-  padding-right: 4%;
+  padding-right: 5%;
 }
 
-.nav-dropdown > select {
+#nav-toggle {
   background-color: transparent;
   color: #000000;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
   border: none;
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #790000;
+  color: #fff;
+}
+
+select, option {
+  background: #ffffff;
 }
 
 ul {
