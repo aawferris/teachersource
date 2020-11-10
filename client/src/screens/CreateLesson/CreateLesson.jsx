@@ -34,7 +34,7 @@ const CreateLesson = () => {
   }
   return (
     <Layout>
-      <div className="edit-header">
+      <div className="create-lesson-header">
         <NavLink id="arrow-link" to="/dashboard">
           <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
         </NavLink>
