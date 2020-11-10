@@ -1,0 +1,28 @@
+#details-header {
+  display: flex;
+  margin: 4% auto;
+  padding-left: 15%;
+  align-items: center;
+  font-family: Abril Fatface;
+}
+
+#arrow {
+  height: 100px;
+  width: auto;
+  align-self: center;
+  padding-right: 15%;
+}
+
+#user-detail {
+  min-height: 56vh;
+}
+
+#info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#details-box {
+  font-size: 25px;
+}
