@@ -46,7 +46,7 @@ const DeleteUser = (props) => {
           </NavLink>
           <h1 id="delete-h1">Are you sure you want to delete?</h1>
         </div>
-        <div className='details-box'>
+        <div id='delete-details-box'>
           <div id='fullname'><span>Name: </span>{user.fullname}</div>
           <div id='email'><span>Email: </span>{user.email}</div>
           <div id='state'><span>State: </span>{user.state}</div>
@@ -56,8 +56,8 @@ const DeleteUser = (props) => {
         </div>
         <div id="delete-form-box">
           <form id="delete-button-box" onSubmit={handleSubmit}>
-            <button ><Link id="ed-btn" to={`/users/${user._id}/edit`}>No, Don't Delete</Link></button>
-            <button id="del-btn" onClick={() => deleteUser(user._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
+          <Link to={`/users/${user._id}/edit`}><button id="ed-btn">No, Don't Delete</button></Link>
+          <Link to={`/users/${user._id}/edit`}><button id="del-btn" onClick={() => deleteUser(user._id)}>Yes, Delete</button></Link>
           </form>
         </div>
       </div>
