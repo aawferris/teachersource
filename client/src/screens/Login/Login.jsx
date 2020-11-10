@@ -20,7 +20,7 @@ const Login = () => {
             <input
               type="email"
               id="login-email"
-              placeholder="Enter your Email"
+              placeholder="Email"
               required
               autoFocus
             />
@@ -30,8 +30,8 @@ const Login = () => {
             <input
               id="password"
               type="password"
+              placeholder="Password"
               required
-              autoFocus
             />
           </div>
         </div>
