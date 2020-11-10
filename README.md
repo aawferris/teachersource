@@ -57,9 +57,9 @@ This is our Schema:
 | Nov. 2  | Finish CRUD, React Skeleton                 | Complete   |
 | Nov. 3  | ELECTION DAY                                | --VOTE--   |
 | Nov. 4  | React basic screens/component functionality | Complete   |
-| Nov. 5  | Reach styling and clean up code (Full MVP)  | Incomplete |
-| Nov. 6  | Post MVPs                                   | Incomplete |
-| Nov. 9  | Post MVPs                                   | Incomplete |
+| Nov. 5  | Reach styling and clean up code (Full MVP)  | Complete   |
+| Nov. 6  | Post MVPs                                   | Complete   |
+| Nov. 9  | Post MVPs                                   | Complete   |
 | Nov. 10 | Presentations                               | Incomplete |
 
 ## Timeframes
@@ -78,12 +78,16 @@ This is our Schema:
 | PUT                     |    M     |     30min      |     30min     |    30min    |
 | DELETE                  |    M     |     30min      |     30min     |    30min    |
 | Deployment (local)      |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Delpoyment (Heroku)     |    H     |      3hrs      |     --?--     |    --?--    |
-| Deployment (Netlify)    |    H     |      1hrs      |     --?--     |    --?--    |
-| Debugging               |    L     |      3hrs      |     --?--     |    --?--    |
-| PostMVP                 |    M     |      3hrs      |     --?--     |    --?--    |
-| Total                   |    H     |     35hrs      |     --?--     |    --?--    |
+| Delpoyment (Heroku)     |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Deployment (Netlify)    |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Debugging               |    L     |      3hrs      |     3hrs      |    3hrs     |
+| PostMVP                 |    M     |      3hrs      |     3hrs      |    3hrs     |
+| Total                   |    H     |     35hrs      |     35hrs     |    35hrs    |
 
 ## Heroku Deployment Links
 
 https://teacher-source.herokuapp.com/ | https://git.heroku.com/teacher-source.git
+
+## Netflify (active) Link
+
+https://teacher-source.netlify.app/

@@ -40,9 +40,10 @@ const CreateUser = () => {
       <div id="create-user-container">
         <div id="create-header">
           <NavLink id="arrow-link" to="/">
-            <img id="create-arrow" src="/assets/arrow-icon.png" alt="backpointing arrow" />
+            <img id="create-arrow" src="/assets/arrow-go-back.png" alt="backpointing arrow" />
           </NavLink>
           <h1 id="create-user">Create Account</h1>
+          <p id="create-account-message">Create an account with your .edu email address to access training, forums, and plan sharing features.</p>
         </div>
         <div id="user-create">
           <form className="user-create-form" onSubmit={handleSubmit}>
@@ -111,6 +112,7 @@ const CreateUser = () => {
               </div>
             </div>
             <div id="checkboxes-box">
+            <p id="checkboxes-title">Which subjects do you teach? (check all that apply).</p>
               <div id="checkbox-first-row">
                 <div id="english-box">
                   <label htmlFor="english">English </label>

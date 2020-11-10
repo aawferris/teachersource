@@ -11,8 +11,9 @@
 }
 
 #login-header {
-  font-size: 60px;
+  font-size: 75px;
   padding-left: 2%;
+  padding-bottom: 0.5%;
 }
 
 #credentials-box {
@@ -23,9 +24,5 @@
 
 #login-email,
 #password {
-  color: #000000;
-}
-
-#login-email::placeholder {
   color: #000000;
 }

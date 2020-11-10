@@ -10,7 +10,7 @@ const Login = () => {
       <div id="login-main-container">
         <div id="login-header-container">
           <NavLink id="arrow-link" to="/">
-              <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
+              <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="login-header">Welcome!</h1>
         </div>
@@ -20,7 +20,7 @@ const Login = () => {
             <input
               type="email"
               id="login-email"
-              placeholder="Enter your Email"
+              placeholder="Email"
               required
               autoFocus
             />
@@ -30,8 +30,8 @@ const Login = () => {
             <input
               id="password"
               type="password"
+              placeholder="Password"
               required
-              autoFocus
             />
           </div>
         </div>
