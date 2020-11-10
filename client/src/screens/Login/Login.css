@@ -26,7 +26,3 @@
 #password {
   color: #000000;
 }
-
-#login-email::placeholder {
-  color: #000000;
-}
