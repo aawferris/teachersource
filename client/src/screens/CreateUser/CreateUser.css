@@ -1,11 +1,34 @@
 #create-user-container {
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 50px auto;
+  padding: 10px;
   min-height: 62vh;
+}
+#create-account-message {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  margin: 40px 0 20px 0;
+}
+
+#checkboxes-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  padding-left: 16px;
+  margin-top: 56px;
 }
 
 #create-header {
   display: flex;
+  flex-direction: column;
   font-family: Abril Fatface;
+  margin: auto 0 auto 206px;
 }
 
 #create-arrow {
