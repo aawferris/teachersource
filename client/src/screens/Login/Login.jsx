@@ -10,7 +10,7 @@ const Login = () => {
       <div id="login-main-container">
         <div id="login-header-container">
           <NavLink id="arrow-link" to="/">
-              <img id="arrow" src="/assets/arrow-icon.png" alt="backpoiting arrow" />
+              <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="login-header">Welcome!</h1>
         </div>
