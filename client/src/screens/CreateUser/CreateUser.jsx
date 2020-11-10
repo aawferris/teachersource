@@ -33,7 +33,7 @@ const CreateUser = () => {
   }
 
   if (isCreated) {
-    return <Redirect to={`/dashboard`} />
+    return <Redirect to={`/`} />
   }
   return (
     <Layout>
