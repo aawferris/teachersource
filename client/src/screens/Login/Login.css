@@ -1,5 +1,5 @@
 #login-main-container {
-  min-height: 39vh;
+  min-height: 56vh;
 }
 
 #login-header-container {
@@ -7,7 +7,7 @@
   margin: 4% auto;
   align-items: center;
   font-family: Abril Fatface;
-  margin-left: 5%;
+  justify-content: center;
 }
 
 #login-header {
