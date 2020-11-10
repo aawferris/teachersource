@@ -25,14 +25,6 @@ const Nav = () => {
             <Dropdown.Item href="/" className="dropdown-item">Contact Us</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        {/* <div className="nav-dropdown">
-          <select onChange={() => window.location.href = "https://teacher-source.netlify.app/dashboard"}>
-            <option>My Account</option>
-            <option >My Dashboard</option>
-            <option>Help</option>
-            <option>Contact Us</option>
-          </select>
-        </div> */}
       </div>
     </nav>
   );
