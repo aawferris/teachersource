@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import { Form, Button, FormGroup } from 'react-bootstrap'
 import Layout from '../../components/shared/Layout/Layout';
 import './Login.css';
 
@@ -15,25 +16,24 @@ const Login = () => {
           <h1 id="login-header">Welcome!</h1>
         </div>
         <div id="credentials-box">
-          <div id="login-name-box">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="login-email"
-              placeholder="Email"
-              required
-              autoFocus
-            />
-          </div>
-          <div id="login-password-box">
-            <label htmlFor="password">Password:</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              required
-            />
-          </div>
+          <Form>
+            <Form.Group id="email-box" controlId="formBasicEmail">
+              <Form.Label id="email-label">Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+
+            <Button id="login-btn" variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
         </div>
       </div>
     </Layout>

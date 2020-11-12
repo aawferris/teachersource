@@ -26,3 +26,12 @@
 #password {
   color: #000000;
 }
+
+#login-btn {
+  margin-left: 5vw;
+}
+
+#email-box {
+  display: flex;
+  flex-direction: column;
+}
