@@ -42,7 +42,7 @@ const UserEdit = (props) => {
     <Layout>
       <div id="edit-user-container">
         <div className="edit-user-header">
-          <NavLink id="arrow-link" to="/users/:id">
+          <NavLink id="arrow-link" to="/">
             <img id="arrow" src="/assets/arrow-go-back.png" alt="backpoiting arrow" />
           </NavLink>
           <h1 id="edit-user">Edit Account Information</h1>

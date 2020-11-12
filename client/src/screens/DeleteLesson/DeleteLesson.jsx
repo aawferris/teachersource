@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Redirect, NavLink, Link } from 'react-router-dom';
+import {Modal, Button} from 'react-bootstrap'
 import Layout from '../../components/shared/Layout/Layout';
 import { getLesson, deleteLesson } from '../../services/lessons';
 import './DeleteLesson.css';
 
 const DeleteLesson = (props) => {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [lesson, setLesson] = useState({
     title: '',
@@ -53,7 +59,29 @@ const DeleteLesson = (props) => {
         <div id="delete-form-box">
           <form id="delete-button-box" onSubmit={handleSubmit}>
             <button id="ed-btn"><Link to={`/lessons/${lesson._id}/edit`}>No, Don't Delete</Link></button>
-            <button id="del-btn" onClick={() => deleteLesson(lesson._id)}><Link to={`/dashboard`}>Yes, Delete</Link></button>
+              <Button id="bootstrap-delete-button" onClick={handleShow}>
+            Yes, Delete
+            </Button>
+
+            <Modal
+              show={show}
+              onHide={handleClose}
+              backdrop="static"
+              keyboard={false}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title variant="danger">¡Alert!</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                Are you sure you want to delete this lesson? You cannot undo this action.
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="primary" onClick={handleClose}>
+                  Cancel
+                </Button>
+                <Link to='/dashboard'><Button variant="danger" onClick={() => deleteLesson(lesson._id)} >I'm sure</Button></Link>
+              </Modal.Footer>
+            </Modal>
           </form>
         </div>
       </div>

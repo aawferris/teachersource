@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, NavLink } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
+import Spinner from 'react-bootstrap/Spinner'
 import { getUser } from '../../services/users';
 import './DetailUser.css';
 
@@ -20,7 +21,11 @@ function DetailUser() {
   }, [id]);
 
   if (!isLoaded) {
-    return <h1>Loading...</h1>
+    return (
+      <Spinner animation="grow">
+        <h1 className="sr-only">Loading...</h1>
+      </Spinner>
+    )
   }
 
   return (

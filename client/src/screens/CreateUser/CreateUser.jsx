@@ -67,7 +67,6 @@ const CreateUser = () => {
                   value={user.email}
                   name='email'
                   required
-                  autoFocus
                   onChange={handleChange}
                 />
                 <label htmlFor="email">School E-mail Adress</label>
@@ -81,7 +80,6 @@ const CreateUser = () => {
                   value={user.state}
                   name='state'
                   required
-                  autoFocus
                   onChange={handleChange}
                 />
                 <label htmlFor="state">State</label>
@@ -93,7 +91,6 @@ const CreateUser = () => {
                   value={user.district}
                   name='district'
                   required
-                  autoFocus
                   onChange={handleChange}
                 />
                 <label htmlFor="district">District</label>
@@ -105,7 +102,6 @@ const CreateUser = () => {
                   value={user.gradeLevel}
                   name='gradeLevel'
                   required
-                  autoFocus
                   onChange={handleChange}
                 />
                 <label htmlFor="gradeLevel">Grade Level</label>
@@ -121,7 +117,6 @@ const CreateUser = () => {
                     id="english"
                     value={user.subjects}
                     name='subject'
-                    autoFocus
                     onChange={handleChange}
                   />
                 </div>
@@ -132,7 +127,6 @@ const CreateUser = () => {
                       id="reading"
                       value={user.subjects}
                       name='reading'
-                      autoFocus
                       onChange={handleChange}
                     />
                 </div>
@@ -143,7 +137,6 @@ const CreateUser = () => {
                       id="writing"
                       value={user.subjects}
                       name='writing'
-                      autoFocus
                       onChange={handleChange}
                     />
                 </div>
@@ -154,7 +147,6 @@ const CreateUser = () => {
                       id="music"
                       value={user.subjects}
                       name='music'
-                      autoFocus
                       onChange={handleChange}
                     />
                 </div>
@@ -165,7 +157,6 @@ const CreateUser = () => {
                       id="foreign-language"
                       value={user.subjects}
                       name='foreign-language'
-                      autoFocus
                       onChange={handleChange}
                     />
                 </div>
@@ -178,7 +169,6 @@ const CreateUser = () => {
                       id="science"
                       value={user.subjects}
                       name='science'
-                      autoFocus
                       onChange={handleChange}
                     />
                 </div>
@@ -189,7 +179,6 @@ const CreateUser = () => {
                     id="math"
                     value={user.subjects}
                     name='math'
-                    autoFocus
                     onChange={handleChange}
                   />
                 </div>
@@ -200,7 +189,6 @@ const CreateUser = () => {
                     id="social-studies"
                     value={user.subjects}
                     name='social-studies'
-                    autoFocus
                     onChange={handleChange}
                   />
                 </div>
@@ -211,7 +199,6 @@ const CreateUser = () => {
                     id="arts"
                     value={user.subjects}
                     name='arts'
-                    autoFocus
                     onChange={handleChange}
                   />
                 </div>
@@ -222,7 +209,6 @@ const CreateUser = () => {
                     id="physical-education"
                     value={user.subjects}
                     name='physical-education'
-                    autoFocus
                     onChange={handleChange}
                   />
                 </div>
@@ -234,7 +220,6 @@ const CreateUser = () => {
                   id="other"
                   value={user.subjects} // this will have to change
                   name='other'
-                  autoFocus
                   onChange={handleChange}
                 />
               </div>
