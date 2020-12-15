@@ -29,6 +29,9 @@ This is our Schema:
 }
 ```
 
+## Changelog
+- Added a modal to confirm deletion of resource. 
+
 ## Netflify (active) Link
 
 https://teacher-source.netlify.app/
